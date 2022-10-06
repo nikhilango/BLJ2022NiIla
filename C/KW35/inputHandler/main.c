@@ -4,7 +4,6 @@
 int main(int argc, char const *argv[]){
 
     int a;
-    int b;
 
     printf("Enter a number between 0 and 10: ");
     scanf("%d", &a);

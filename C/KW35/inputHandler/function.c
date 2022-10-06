@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int readRangedInt(int a, int b){
+int readRangedInt(int a){
     int min = 0;
     int max = 10;
     
