@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Probezeitbericht</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <form action="process-form.php">
+            <h1>Probezeitbericht</h1>
+            <!---------------------------------------------------------------------------------->
+            <div class="allinfos">
+                <div class="info">
+                    <p>Lerende/r: </p>
+                    <input type="text" name="lerende/r" class="nameinput">
+                </div>
+                <!--------------------------------------------------------------------->
+                <div class="info">
+                    <p>Lehrberuf: </p>
+                    <select name="Lehrberuf" class="berufinput">
+                            <option value="applikationsentwickler/in">Applikationsentwickler/in</option>
+                            <option value="platformentwickler/in">Platformentwickler/in</option>
+                            <option value="mediamatiker/in">Mediamatiker/in</option>
+                            <option value="kauffrau/kaufmann">Kauffrau/Kaufmann</option>
+                    </select>
+                </div>
+                <!--------------------------------------------------------------------->
+                <div class="info">
+                    <p>Berufsmaturität</p>
+                    <div class="berufsmaturität">
+                        <div>
+                            <input type="radio" name="bms" value="mitbms">
+                            <label>mit BMS</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="bms" value="ohnebms">
+                            <label>ohne BMS</label>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------------------------------------------------------->
+                <div class="info">
+                    <p>Lehrbeginn</p>
+                    <input type="date" name="lehrbeginn" class="lehrbeginninput">
+                </div>
+                <!--------------------------------------------------------------------->
+                <div class="info">
+                    <p>Berufsbildner/in: </p>
+                    <input type="text" name="lerende/r" class="berufsbildnerinput">
+                </div>
+                <!--------------------------------------------------------------------->
+            </div>
+            <!---------------------------------------------------------------------------------->
+            <h3>Gesamteindruck</h3>
+            <textarea>
+
+            </textarea>
+            <!---------------------------------------------------------------------------------->
+            <h3>Beurteilung</h3>
+            <div class="beurteilungskompetenzen">
+                <hr>
+                <h4>Fachkompetenz</h4>
+                <p>Fertigkeiten, Kenntnisse, Qualität etc.</p>
+                <div>
+                    <input type="radio" name="fachkompetenz" value="sehrgut">
+                    <label>sehr gut</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="fachkompetenz" value="gut">
+                    <label>gut</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="fachkompetenz" value="genügend">
+                    <label>genügend</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="fachkompetenz" value="ungenügend">
+                    <label>ungenügend</label>
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------->
+            <hr>
+            <div class="beurteilungskompetenzen">
+                <h4>Methodenkompetenz</h4>
+                <p>Lernfähigkeit, Arbeitsmethodik, Kreativität etc.</p>
+                <div>
+                    <input type="radio" name="methodenkompetenz" value="sehrgut">
+                    <label>sehr gut</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="methodenkompetenz" value="gut">
+                    <label>gut</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="methodenkompetenz" value="genügend">
+                    <label>genügend</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="methodenkompetenz" value="ungenügend">
+                    <label>ungenügend</label>
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------->
+            <hr>
+            <div class="beurteilungskompetenzen">
+                <h4>Sozialkompetenz</h4>
+                <p>Teamfähigkeit, Firmenbezug, umweltgerechtes Verhalten etc.</p>
+                <div>
+                    <input type="radio" name="solzialkompetenz" value="sehrgut">
+                    <label>sehr gut</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="solzialkompetenz" value="gut">
+                    <label>gut</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="solzialkompetenz" value="genügend">
+                    <label>genügend</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="solzialkompetenz" value="ungenügend">
+                    <label>ungenügend</label>
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------->
+            <hr>
+            <div class="beurteilungskompetenzen">
+                <h4>Selbstkompetenz</h4>
+                <p>Selbständigkeit, Leistungsbereitschaft, Flexibilität etc.</p>
+                <div>
+                    <input type="radio" name="selbstkompetenz" value="sehrgut">
+                    <label>sehr gut</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="selbstkompetenz" value="gut">
+                    <label>gut</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="selbstkompetenz" value="genügend">
+                    <label>genügend</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="selbstkompetenz" value="ungenügend">
+                    <label>ungenügend</label>
+                </div>
+            </div>
+            <!---------------------------------------------------------------------------------->
+            <h3>Fazit</h3>
+            <p>Probezeit</p>
+            <select name="Probezeit">
+                <option value="bestanden">bestanden</option>
+                <option value="nichtbestanden">nicht bestanden</option>
+                <option value="verlängert">verlängert</option>
+            </select>
+            <!---------------------------------------------------------------------------------->
+            <h3>Bemerkungen</h3>
+            <textarea>
+
+            </textarea>
+            <button>
+                Speichern
+            </button>
+        </form>
+    </body>
+
+</html>

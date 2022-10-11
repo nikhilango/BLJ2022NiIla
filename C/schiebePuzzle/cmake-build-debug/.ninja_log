@@ -1,0 +1,18 @@
+# ninja log v5
+1	91	6868309828552100	CMakeFiles/schiebePuzzle.dir/main.c.obj	23e753c85f6e0830
+5	110	6868309828765172	CMakeFiles/schiebePuzzle.dir/utils.c.obj	d187c1f355e80413
+110	205	6868309829659613	schiebePuzzle.exe	6930ece818a9c332
+1	90	6868312757919681	CMakeFiles/schiebePuzzle.dir/main.c.obj	23e753c85f6e0830
+93	215	6868312759133664	schiebePuzzle.exe	6930ece818a9c332
+0	82	6868313245598242	CMakeFiles/schiebePuzzle.dir/main.c.obj	23e753c85f6e0830
+82	183	6868313246552833	schiebePuzzle.exe	6930ece818a9c332
+1	90	6868314537003428	CMakeFiles/schiebePuzzle.dir/main.c.obj	23e753c85f6e0830
+91	189	6868314537969079	schiebePuzzle.exe	6930ece818a9c332
+1	89	6868315839701356	CMakeFiles/schiebePuzzle.dir/main.c.obj	23e753c85f6e0830
+89	196	6868315840734996	schiebePuzzle.exe	6930ece818a9c332
+1	88	6868318536964727	CMakeFiles/schiebePuzzle.dir/main.c.obj	23e753c85f6e0830
+89	188	6868318537926372	schiebePuzzle.exe	6930ece818a9c332
+2	98	6868318761002787	CMakeFiles/schiebePuzzle.dir/main.c.obj	23e753c85f6e0830
+98	205	6868318762042277	schiebePuzzle.exe	6930ece818a9c332
+1	1217	6870101658103104	CMakeFiles/schiebePuzzle.dir/main.c.obj	23e753c85f6e0830
+1218	1715	6870101663043279	schiebePuzzle.exe	6930ece818a9c332

@@ -1,0 +1,21 @@
+*{
+    margin-left: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.allinfos{
+}
+
+.info {
+}
+
+
+
+input, textarea{
+    background-color: #DADADA; 
+}
+
+.info .berufsmaturität{
+    padding: 5px;
+    border: solid black 2px;
+}

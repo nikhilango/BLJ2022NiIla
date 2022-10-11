@@ -11,5 +11,4 @@ void readRangedInt(int a, int b){
     else {
         printf("You typed out of the number range.");
     }
-    
-
+}
