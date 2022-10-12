@@ -1,0 +1,149 @@
+*{
+    margin-block-end: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    position: absolute;
+    padding-left: 5px;
+    top: 18px;
+    z-index: 1;
+    color: #0074AF;
+    font-size: 12px;
+}
+
+.firstyear{
+    position: absolute;
+    left: 340px;
+    top: 34px;
+    z-index: 1;
+    font-size: 12px;
+    color: #0074AF;
+}
+
+.secondyear{
+    position: absolute;
+    left: 512px;
+    top: 34px;
+    z-index: 1;
+    font-size: 12px;
+    color: #0074AF;
+}
+
+.thirdyear{
+    position: absolute;
+    left: 684px;
+    top: 34px;
+    z-index: 1;
+    font-size: 12px;
+    color: #0074AF;
+}
+
+.fourthyear{
+    position: absolute;
+    left: 856px;
+    top: 34px;
+    z-index: 1;
+    font-size: 12px;
+    color: #0074AF;
+}
+
+.inputs {
+    position: relative;
+    background-color: #B2D0DD;
+    height: 30px;
+    padding-top: 28px;
+    padding-left: 320px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    margin-right: 370px;
+    z-index: -1;
+}
+
+.input1{
+    position: absolute;
+    height: 12px;
+    color: #0074AF;
+    font-size: 12px;
+    z-index: 1;
+    width: 134px;
+    top: 45px;
+    left: 347px;
+}
+
+.input1, .input2, .input3, .input4{
+    caret-color: #0074AF;
+}
+
+.input2{
+    position: absolute;
+    height: 12px;
+    color: #0074AF;
+    font-size: 12px;
+    z-index: 1;
+    width: 131px;
+    top: 45px;
+    left: 522px;
+}
+
+.input3{
+    position: absolute;
+    height: 12px;
+    color: #0074AF;
+    font-size: 12px;
+    z-index: 1;
+    width: 132px;
+    top: 45px;
+    left: 694px;
+}
+
+.input4{
+    position: absolute;
+    height: 12px;
+    color: #0074AF;
+    font-size: 12px;
+    z-index: 1;
+    width: 131px;
+    top: 45px;
+    left: 867px;
+}
+
+.whitebackground1{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 49px;
+    width: 155px;
+    top: 15px;
+    left: 335px;
+}
+
+.whitebackground2{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 49px;
+    width: 155px;
+    top: 15px;
+    left: 507px;
+}
+
+.whitebackground3{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 49px;
+    width: 155px;
+    top: 15px;
+    left: 680px;
+}
+
+.whitebackground4{
+    position: absolute;
+    z-index: -0;
+    background-color: white;
+    height: 49px;
+    width: 155px;
+    top: 15px;
+    left: 852px;
+}
