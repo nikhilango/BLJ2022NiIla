@@ -67,13 +67,21 @@
     font-size: 12px;
     z-index: 1;
     width: 134px;
-    top: 46px;
+    top: 48px;
     left: 348px;
 }
 
 .input1, .input2, .input3, .input4{
     caret-color: #0074AF;
 }
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: white;
+  }
 
 .input2{
     position: absolute;
@@ -82,7 +90,7 @@
     font-size: 12px;
     z-index: 1;
     width: 131px;
-    top: 46px;
+    top: 48px;
     left: 523px;
 }
 
@@ -93,7 +101,7 @@
     font-size: 12px;
     z-index: 1;
     width: 132px;
-    top: 46px;
+    top: 48px;
     left: 695px;
 }
 
@@ -104,7 +112,7 @@
     font-size: 12px;
     z-index: 1;
     width: 131px;
-    top: 46px;
+    top: 48px;
     left: 868px;
 }
 
