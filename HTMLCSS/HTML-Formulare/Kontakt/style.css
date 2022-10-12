@@ -1,0 +1,33 @@
+.container{
+    margin-top: 20%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row{
+    position: relative;
+}
+
+input[type=text]{
+    position: absolute;
+    left: 150px;
+    width: 400px;
+    height: 40px;
+}
+
+input[type=date]{
+    position: absolute;
+    left: 150px;
+    width: 400px;
+    height: 40px;
+}
+
+select{
+    position: absolute;
+    left: 150px;
+    height: 40px;
+    width: 400px;
+}
+
+p{
+    margin-bottom: 30px;   
+}
