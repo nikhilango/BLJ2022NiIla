@@ -1,0 +1,357 @@
+.container{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: -1;
+    background-color: #B2D0DD;
+    height: 295px;
+    width: 1050px;
+}
+
+p{
+    color: #0074AF; 
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.name{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 400px;
+    top: 7px;
+    left: 15px;
+}
+
+.vorname{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 400px;
+    top: 7px;
+    left: 425px;
+}
+
+.gebdatum{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 200px;
+    top: 7px;
+    left: 835px;
+}
+
+.strasse{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 810px;
+    top: 50px;
+    left: 15px;
+}
+
+.muttersprache{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 20px;
+    width: 200px;
+    top: 50px;
+    left: 835px;
+}
+
+.deutsch{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 70px;
+    left: 855px;
+}
+.dinput{
+    position: absolute;
+    z-index: 1;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 72px;
+    left: 833px;
+}
+
+.französisch{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 70px;
+    left: 905px;
+}
+.finput{
+    position: absolute;
+    z-index: 1;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 72px;
+    left: 882px;
+}
+
+.italienisch{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 70px;
+    left: 955px;
+}
+.iinput{
+    position: absolute;
+    z-index: 1;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 72px;
+    left: 932px;
+}
+
+.romanisch{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 35px;
+    top: 70px;
+    left: 1005px;
+}
+.rätinput{
+    position: absolute;
+    z-index: 1;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 72px;
+    left: 982px;
+}
+
+.ort{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 810px;
+    top: 93px;
+    left: 15px;
+}
+
+.andere{
+    position: absolute;
+    z-index: 1;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 115px;
+    left: 833px;
+}
+
+.anderesprache{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 180px;
+    top: 93px;
+    left: 855px;
+}
+
+.geschlecht{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 90px;
+    top: 134px;
+    left: 835px;
+}
+
+.männlich{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 134px;
+    left: 956px;
+}
+.minput{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 90px;
+    top: 134px;
+    left: 897px;
+}
+
+
+.weiblich{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 134px;
+    left: 1007px;
+}
+.winput{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 90px;
+    top: 134px;
+    left: 948px;
+}
+
+.telnummer{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 326.666px;
+    top: 154px;
+    left: 15px;
+}
+
+.heimatort{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 326.666px;
+    top: 154px;
+    left: 352.666px;
+}
+
+.ahvnummer{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 345px;
+    top: 154px;
+    left: 690.3px;
+}
+
+.mobile{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 326.666px;
+    top: 197px;
+    left: 15px;
+}
+
+.kanton{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 326.666px;
+    top: 197px;
+    left: 352.666px;
+}
+
+.ausländerausweis{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 20px;
+    width: 172.5px;
+    top: 197px;
+    left: 690.3px;
+}
+
+.c{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 130px;
+    top: 221px;
+    left: 710px;
+}
+.cinput{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    top: 220px;
+    left: 685px;
+}
+
+.anderer{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 15px;
+    width: 15px;
+    top: 222px;
+    left: 848px;
+}
+.ainput{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    top: 219px;
+    left: 843px;
+}
+
+.andererstatus{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 163px;
+    top: 197px;
+    left: 873px;
+}
+
+.email{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 326.666px;
+    top: 240px;
+    left: 15px;
+}
+
+.staat{
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    height: 40px;
+    width: 326.666px;
+    top: 240px;
+    left: 352.666px;
+}
+
+.zwingendangeben{
+    position: absolute;
+    z-index: 0;
+    background-color: #B2D0DD;
+    height: 40px;
+    width: 345px;
+    top: 240px;
+    left: 690.3px;
+}
