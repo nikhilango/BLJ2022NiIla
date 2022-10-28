@@ -38,7 +38,7 @@ void initCreateSecClock(int *time){
     switch (*time) {
         case 15:
             initSecClock();
-            secClock[3][3] = 'o';
+            secClock[3][3] = 254;
             secClock[3][4] = '-';
             secClock[3][5] = '-';
             secClock[3][6] = '>';
@@ -46,7 +46,7 @@ void initCreateSecClock(int *time){
             break;
         case 30:
             initSecClock();
-            secClock[3][3] = 'o';
+            secClock[3][3] = 254;
             secClock[4][3] = '|';
             secClock[5][3] = '|';
             secClock[6][3] = '|';
@@ -54,7 +54,7 @@ void initCreateSecClock(int *time){
             break;
         case 45:
             initSecClock();
-            secClock[3][3] = 'o';
+            secClock[3][3] = 254;
             secClock[3][2] = '-';
             secClock[3][1] = '-';
             secClock[3][0] = '<';
@@ -62,7 +62,7 @@ void initCreateSecClock(int *time){
             break;
         case 1:
             initSecClock();
-            secClock[3][3] = 'o';
+            secClock[3][3] = 254;
             secClock[2][3] = '|';
             secClock[1][3] = '|';
             secClock[0][3] = '^';
