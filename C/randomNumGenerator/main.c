@@ -34,5 +34,4 @@ int *getRandomNums(unsigned int n){
     for (int i = 0; i < n; i++) {
         printf("%d, ", *(randomNumbers + i));
     }
-    //return randomNumbers;
 }
