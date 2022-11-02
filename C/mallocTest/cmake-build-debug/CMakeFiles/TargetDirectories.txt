@@ -1,0 +1,3 @@
+C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/mallocTest/cmake-build-debug/CMakeFiles/arrayWith1_5MElements.dir
+C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/mallocTest/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/mallocTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
