@@ -8,8 +8,7 @@ typedef struct Node {
 
 
 int main() {
-    TNode * head = NULL;
-    head = (TNode *) malloc(sizeof(TNode));
+    TNode *head = NULL;
 
     head->data = 1;
     head->next = (TNode *) malloc(sizeof(TNode));
@@ -18,6 +17,9 @@ int main() {
     head->next->next->data = 3;
     head->next->next->next = (TNode *) malloc(sizeof(TNode));
     head->next->next->next = NULL;
+
+
+    printf("%d\n", head->next->next->data);
 
     return 0;
 }
