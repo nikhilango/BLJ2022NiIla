@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct Node {
-    int data;
-    struct Node *next;
-} TNode;
-
+#include "linkedlist.h"
 
 int main() {
     TNode *head = NULL;
+    head = (TNode *) malloc(sizeof(TNode));
 
     head->data = 1;
     head->next = (TNode *) malloc(sizeof(TNode));
@@ -18,8 +14,10 @@ int main() {
     head->next->next->next = (TNode *) malloc(sizeof(TNode));
     head->next->next->next = NULL;
 
+    printList(head);
 
-    printf("%d\n", head->next->next->data);
 
     return 0;
 }
+
+

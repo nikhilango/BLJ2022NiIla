@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/linkedLists
+# Install script for directory: C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW44/linkedLists
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/linkedLists/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW44/linkedLists/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
