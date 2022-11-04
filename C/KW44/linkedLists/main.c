@@ -3,6 +3,7 @@
 #include "linkedlist.h"
 
 int main() {
+    int delNum = 13;
     TNode *head = NULL;
     head = (TNode *) malloc(sizeof(TNode));
 
@@ -15,7 +16,19 @@ int main() {
     head->next->next->next = NULL;
 
     printList(head);
-
+    printf("-------------Printing list-------------\n");
+    for (int i = 0; i < 10; ++i) {
+        addNode(head);
+    }
+    printList(head);
+    printf("-------------Deleting node-------------\n");
+    delNode(head);
+    printList(head);
+    printf("--------Adding node at 4th index-------\n");
+    addNodeAtIndex(head);
+    printList(head);
+    printf("-------Printing node of 9th index------\n");
+    printListAtIndex(head);
 
     return 0;
 }
