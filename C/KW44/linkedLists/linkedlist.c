@@ -8,20 +8,22 @@ typedef struct node {
 void printList(TNode *p_head){
     TNode *current_node = p_head;
     while ( current_node != NULL) {
-        printf("%d\n", current_node->data);
+        printf("%d, ", current_node->data);
         current_node = current_node->next;
     }
 }
 
-void printListAtIndex(TNode *p_head){
+void printListAtIndex(TNode *p_head) {
     int index = 0;
     TNode *current_node = p_head;
-    current_node->next->next->next= index;
-    while ( current_node != index) {
+    current_node->next->next->next->next->next = index;
+
+    while ( current_node->next != index) {
         current_node = current_node->next;
     }
-    printf("%d\n", current_node->data);
+    printf("%d", current_node->data);
 }
+
 int val = 4;
 void addNode(TNode *p_head){
     struct node *newNode = malloc(sizeof(struct node));
@@ -57,7 +59,6 @@ void addNodeAtIndex(TNode *p_head){
     else{
         struct node *lastNode = p_head;
         lastNode->next->next->next->next = index;
-
         while(lastNode->next != index){
             lastNode = lastNode->next;
         }
@@ -73,7 +74,6 @@ void delNode(TNode *p_head){
         prev = temp;
         temp = temp->next;
         if(temp->data == 4){
-            printf("Number was found\n");
             break;
         }
     }
@@ -82,9 +82,66 @@ void delNode(TNode *p_head){
         printf("test");
         return;
     }
-
     prev->next = temp->next;
     free(temp);
 
-    printf("The cell has been deleted\n");
+
+}
+
+void changeNode(TNode *p_head){
+    struct node *newNode = malloc(sizeof(struct node));
+    newNode->data = 213;
+    newNode->next = NULL;
+
+
+
+    struct node *lastNode = p_head;
+
+    while(lastNode->next != NULL){
+            lastNode = lastNode->next;
+    }
+
+    lastNode->data = 213;
+
+}
+
+void changeAllNodes(TNode *p_head){
+    struct node *newNode = malloc(sizeof(struct node));
+    newNode->data = 213;
+    newNode->next = NULL;
+
+
+
+    struct node *lastNode = p_head;
+
+    while(lastNode->next != NULL){
+        lastNode->data = 3;
+        lastNode = lastNode->next;
+        lastNode->data = 3;
+    }
+
+
+}
+
+void calcLength(TNode *p_head){
+    int lenght = 0;
+    TNode *current_node = p_head;
+    while ( current_node != NULL) {
+        lenght++;
+        current_node = current_node->next;
+    }
+    printf("%d", lenght);
+}
+
+void delList(TNode *p_head){
+    struct node* current = p_head;
+    struct node* next;
+
+    while (current != NULL){
+        next = current->next;
+        free(current);
+        current = next;
+    }
+
+    p_head = NULL;
 }

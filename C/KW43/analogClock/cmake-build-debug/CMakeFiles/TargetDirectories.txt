@@ -1,3 +1,3 @@
-C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/analogClock/cmake-build-debug/CMakeFiles/analogClock.dir
-C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/analogClock/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/analogClock/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/analogClock/cmake-build-debug/CMakeFiles/analogClock.dir
+C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/analogClock/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/analogClock/cmake-build-debug/CMakeFiles/rebuild_cache.dir

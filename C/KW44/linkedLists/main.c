@@ -16,20 +16,29 @@ int main() {
     head->next->next->next = NULL;
 
     printList(head);
-    printf("-------------Printing list-------------\n");
+    printf("\n-------------Printing list-------------\n");
     for (int i = 0; i < 10; ++i) {
         addNode(head);
     }
     printList(head);
-    printf("-------------Deleting node-------------\n");
+    printf("\n-------------Deleting node-------------\n");
     delNode(head);
     printList(head);
-    printf("--------Adding node at 4th index-------\n");
+    printf("\n--------Adding node at 5th index-------\n");
     addNodeAtIndex(head);
     printList(head);
-    printf("-------Printing node of 9th index------\n");
+    printf("\n-------Printing node of 5th index------\n");
     printListAtIndex(head);
-
+    printf("\n-------Changing node at 5th index------\n");
+    changeNode(head);
+    printList(head);
+    printf("\n-----------Changing all nodes----------\n");
+    changeAllNodes(head);
+    printList(head);
+    printf("\n---------------List lenght-------------\n");
+    calcLength(head);
+    printf("\n-------------Deleted List------------\n");
+    delList(head);
     return 0;
 }
 

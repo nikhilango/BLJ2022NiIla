@@ -10,5 +10,8 @@ void printListAtIndex(TNode *p_head);
 void addNode(TNode *p_head);
 void addNodeAtIndex(TNode *p_head);
 void delNode(TNode *p_head);
-
+void changeNode(TNode *p_head);
+void changeAllNodes(TNode *p_head);
+void calcLength(TNode *p_head);
+void delList(TNode *p_head);
 #endif MAIN_C_LINKEDLIST_H

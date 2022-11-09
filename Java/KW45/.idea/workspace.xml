@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6198d8d9-352a-4b22-a976-f1c9cbe338a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/.cmake/api/v1/reply/cache-v2-51757ac01b2b7dd324a4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-939e28f57f097aa4f4c5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-92bc9ff28c193be780cf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-27T06-51-11-0406.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/analogClock.dir/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/analogClock/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6b2861ec51a9d4dfaccd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-b0560e31f7a7619a4402.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-53cc8068378b1a8ec0e9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-28T05-53-26-0321.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/CMakeFiles/structBook.dir/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW43/structBook/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/CMakeFiles/linkedLists.dir/linkedlist.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/CMakeFiles/linkedLists.dir/linkedlist.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/CMakeFiles/linkedLists.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/CMakeFiles/linkedLists.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/linkedLists.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/cmake-build-debug/linkedLists.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/linkedlist.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/linkedlist.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/linkedlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/linkedlist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C/KW44/linkedLists/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../C/KW44/linkedLists/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HIjweUKSwuSzX6RxVPrSI7OQdv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/Java/KW45&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6198d8d9-352a-4b22-a976-f1c9cbe338a2" name="Changes" comment="" />
+      <created>1667979732018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667979732018</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

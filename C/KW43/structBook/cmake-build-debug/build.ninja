@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/structBook/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/structBook/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target structBook
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = C$:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/structBook
 
 build cmake_object_order_depends_target_structBook: phony || CMakeFiles/structBook.dir
 
-build CMakeFiles/structBook.dir/main.c.obj: C_COMPILER__structBook_Debug C$:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/structBook/main.c || cmake_object_order_depends_target_structBook
+build CMakeFiles/structBook.dir/main.c.obj: C_COMPILER__structBook_Debug C$:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/structBook/main.c || cmake_object_order_depends_target_structBook
   DEP_FILE = CMakeFiles\structBook.dir\main.c.obj.d
   FLAGS = -g -std=gnu99
   OBJECT_DIR = CMakeFiles\structBook.dir
@@ -81,7 +81,7 @@ build structBook.exe: C_EXECUTABLE_LINKER__structBook_Debug CMakeFiles/structBoo
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nikhi\Documents\GitHub\BLJ2022NiIla\C\structBook\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\nikhi\Documents\GitHub\BLJ2022NiIla\C\KW43\structBook\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\nikhi\Documents\GitHub\BLJ2022NiIla\C\structBook\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\nikhi\Documents\GitHub\BLJ2022NiIla\C\structBook -BC:\Users\nikhi\Documents\GitHub\BLJ2022NiIla\C\structBook\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\nikhi\Documents\GitHub\BLJ2022NiIla\C\KW43\structBook\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\nikhi\Documents\GitHub\BLJ2022NiIla\C\KW43\structBook -BC:\Users\nikhi\Documents\GitHub\BLJ2022NiIla\C\KW43\structBook\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +110,7 @@ build structBook: phony structBook.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/structBook/cmake-build-debug
+# Folder: C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/structBook/cmake-build-debug
 
 build all: phony structBook.exe
 

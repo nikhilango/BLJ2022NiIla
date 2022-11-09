@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/structBook/cmake-build-debug"
+			"value" : "c:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/structBook/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/structBook"
+			"value" : "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/structBook"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1095,7 +1095,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/structBook/cmake-build-debug"
+			"value" : "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/structBook/cmake-build-debug"
 		},
 		{
 			"name" : "structBook_IS_TOP_LEVEL",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/structBook"
+			"value" : "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/C/KW43/structBook"
 		}
 	],
 	"kind" : "cache",
