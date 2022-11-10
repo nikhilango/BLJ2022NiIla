@@ -16,7 +16,7 @@ public class Main {
         age = input.nextInt();
 
         double calorieMale = 66.47 + 13.7 * bodyweight + 5 * height - 6.8 * age;
-        double calorieFemale = 655.1+9.6 * bodyweight + 1.8 * height - 4.7 * age;
+        double calorieFemale = 655.1  + 9.6 * bodyweight + 1.8 * height - 4.7 * age;
         System.out.println("Male: " + calorieMale + " calories per day");
         System.out.println("Female: " + calorieFemale + " calories per day");
     }
