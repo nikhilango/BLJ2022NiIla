@@ -85,6 +85,7 @@ public class Translator {
         alphabet.put("----.", "8");
         alphabet.put("-----", "9");
         if (mode == 1){
+            System.out.println("****************************************************************************");
             System.out.println("Enter a sentece: ");
             String sentence = input.nextLine();
             sentence = sentence.toLowerCase();
@@ -93,19 +94,23 @@ public class Translator {
                 String letter = "" + letters;
                 System.out.print(morseCode.get(letter) + " ");
             }
+            System.out.println("\n****************************************************************************");
         }
         else if(mode == 2){
             ArrayList<String> conversion = new ArrayList<>();
             while(true){
+                System.out.println("****************************************************************************");
                 System.out.println("Enter a morse code LETTER BY LETTER (X when you are finished): ");
                 String morse = input.nextLine();
                 if (morse.equals("X")){
                     for (int i = 0; i < conversion.size(); i++){
                     System.out.print(alphabet.get(conversion.get(i)));
                     }
+                    System.out.println("\n****************************************************************************");
                     return;
                 }
                 conversion.add(morse);
-            }        }
+            }
+        }
     }
 }
