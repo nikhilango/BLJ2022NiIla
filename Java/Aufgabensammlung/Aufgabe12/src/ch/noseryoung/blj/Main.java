@@ -1,5 +1,6 @@
 package ch.noseryoung.blj;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -13,10 +14,18 @@ public class Main {
     }
     public static void createArena(int rows){
         String arena[][] = new String[rows][rows + 1];
+        Random randomGen = new Random();
+
         int counter = rows + 1;
         for (int i = 0; i < rows; i++ ){
             for (int j = 0; j < counter; j++){
-                 arena[i][j] = " ■";
+                int randomNum = randomGen.nextInt((1 - 0) + 1) + 0;
+                if (randomNum == 1){
+                    arena[i][j] = " ■ ";
+                }
+                 else {
+                    arena[i][j] = " ▢";
+                }
 
             }
             counter--;
