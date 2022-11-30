@@ -26,7 +26,6 @@ public class Main {
                  else {
                     arena[i][j] = " ▢";
                 }
-
             }
             counter--;
         }
