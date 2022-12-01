@@ -124,6 +124,28 @@ public class Main {
                 System.out.println();
             }
         }
+        System.out.println("****************************KILL A FISH******************************");
+        System.out.print("Do you want to kill one of your fishes? 1/0: ");
+        int mode3 = input.nextInt();
+        if (mode3 == 1){
+            System.out.print("Select a fish: ");
+            String killFish = input1.nextLine();
+                int a = 0;
+                while (a < names.size()){
+                    if (names.get(a).equals(killFish)){
+                        System.out.println("The fish was found!");
+                        break;
+                    }
+                }
+                tank[ypos.get(a) - 1][xpos.get(a) - 1] = " ▢ ";
+
+            for (int i = 0; i < tanksize; i++){
+                for (int j = 0; j < tanksize; j++){
+                    System.out.print(tank[i][j]);
+                }
+                System.out.println();
+            }
+        }
         System.out.println("*****************************DECORATE*******************************");
         System.out.print("Do you want to add decorations? 1/0: ");
         int mode2 = input.nextInt();
