@@ -1,16 +1,15 @@
 package ch.noseryoung.blj;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Aquarium standard = new Aquarium(1, 4);
-        ArrayList<String> names = new ArrayList<String>();
-        ArrayList<Integer> fishtypes = new ArrayList<Integer>();
-        ArrayList<Integer> xpos = new ArrayList<Integer>();
-        ArrayList<Integer> ypos = new ArrayList<Integer>();
+        ArrayList<String> names = new ArrayList<>();
+        ArrayList<Integer> fishtypes = new ArrayList<>();
+        ArrayList<Integer> xpos = new ArrayList<>();
+        ArrayList<Integer> ypos = new ArrayList<>();
         int amountOfFish = standard.generateFish();
         int tanksize = standard.getAquariumSize();
         int watertype = standard.generateWatertype();
@@ -171,5 +170,9 @@ public class Main {
                 System.out.println();
             }
         }
+        input.close();
+        input1.close();
+        input2.close();
+        input3.close();
     }
 }
