@@ -79,7 +79,7 @@ public class Main {
                     tank[i][j] = "\uD83D\uDC1F";
                 }
                 else {
-                    tank[i][j] = " ▢ ";
+                    tank[i][j] = "\uD83D\uDFE6";
                 }
                 amountOfFish--;
             }
@@ -106,7 +106,7 @@ public class Main {
             int changex = input2.nextInt();
             System.out.print("Move to y-position: ");
             int changey = input3.nextInt();
-            if (tank[changey - 1][changex - 1].equals(" ▢ ")){
+            if (tank[changey - 1][changex - 1].equals("\uD83D\uDFE6")){
                 int i;
                 tank[changey - 1][changex - 1] = "\uD83D\uDC1F";
                  for (i = 0; i < names.size(); i++){
@@ -115,13 +115,13 @@ public class Main {
                          break;
                      }
                  }
-                 tank[ypos.get(i) - 1][xpos.get(i) - 1] = " ▢ ";
-            }
-            for (int i = 0; i < tanksize; i++){
-                for (int j = 0; j < tanksize; j++){
-                    System.out.print(tank[i][j]);
+                 tank[ypos.get(i) - 1][xpos.get(i) - 1] = "\uD83D\uDFE6";
+                for (i = 0; i < tanksize; i++){
+                    for (int j = 0; j < tanksize; j++){
+                        System.out.print(tank[i][j]);
+                    }
+                    System.out.println();
                 }
-                System.out.println();
             }
         }
         System.out.println("****************************KILL A FISH******************************");
@@ -137,7 +137,7 @@ public class Main {
                         break;
                     }
                 }
-                tank[ypos.get(a) - 1][xpos.get(a) - 1] = " ▢ ";
+                tank[ypos.get(a) - 1][xpos.get(a) - 1] = "\uD83D\uDFE6";
 
             for (int i = 0; i < tanksize; i++){
                 for (int j = 0; j < tanksize; j++){
