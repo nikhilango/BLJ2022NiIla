@@ -1,5 +1,8 @@
 package ch.noseryoung.blj;
 
+import java.time.LocalDate;
+import java.time.Period;
+
 public class Main {
     public static void main(String[] args) {
         Person[] persArr = new Person[40];
@@ -20,17 +23,38 @@ public class Main {
                 }
             }
         }
+        for(int rep = 0; rep < 40; rep++){
+            for(int i = 0; i < 39; i++){
+                if(persArr[i].day > persArr[i + 1].day){
+                    int temp = persArr[i + 1].day;
+                    int temp2 = persArr[i + 1].month;
+                    String temp1 = persArr[i + 1].name;
+                    persArr[i + 1].day = persArr[i].day;
+                    persArr[i + 1].month = persArr[i].month;
+                    persArr[i + 1].name = persArr[i].name;
+                    persArr[i].day = temp;
+                    persArr[i].month = temp2;
+                    persArr[i].name = temp1;
+                }
+            }
+        }
+
+        System.out.println("In 2022 people have their birthday in");
         String[] months ={"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+
         for (int i = 0; i < 12; i++){
             System.out.println();
             System.out.println(months[i]);
             for (int j = 0; j < 40; j++){
                 if (persArr[j].month == i + 1){
-                    System.out.println(persArr[j].day + ". " + persArr[j].month +" "+ persArr[j].name);
+                    System.out.println("    -" + persArr[j].day + ". " + persArr[j].name + persArr[j].year);
                 }
+                //System.out.println();
             }
         }
-
+        //for (int j = 0; j < 40; j++){
+        //    System.out.println(persArr[j].year);
+        //}
 
 
     }
