@@ -15,22 +15,4 @@ public class Person {
         this.name = name;
 
     }
-
-    public static void sort(Person[] persArr){
-
-    }
-
-    public int getYear() {
-        return year;
-    }
-
-    public int getMonth() {
-        return month;
-    }
-
-    public int getDay() {
-        return day;
-    }
-
-
 }
