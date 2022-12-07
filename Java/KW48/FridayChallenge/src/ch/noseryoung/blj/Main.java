@@ -8,32 +8,38 @@ public class Main {
         Person[] persArr = new Person[40];
 
         initPersonArray(persArr);
-        for(int rep = 0; rep < 40; rep++){
+        for(int rep = 0; rep < 50; rep++){
             for(int i = 0; i < 39; i++){
                 if(persArr[i].month > persArr[i + 1].month){
                     int temp = persArr[i + 1].day;
                     int temp2 = persArr[i + 1].month;
+                    int temp3 = persArr[i + 1].year;
                     String temp1 = persArr[i + 1].name;
                     persArr[i + 1].day = persArr[i].day;
                     persArr[i + 1].month = persArr[i].month;
+                    persArr[i + 1].year = persArr[i].year;
                     persArr[i + 1].name = persArr[i].name;
                     persArr[i].day = temp;
                     persArr[i].month = temp2;
+                    persArr[i].year = temp3;
                     persArr[i].name = temp1;
                 }
             }
         }
-        for(int rep = 0; rep < 40; rep++){
+        for(int rep = 0; rep < 50; rep++){
             for(int i = 0; i < 39; i++){
                 if(persArr[i].day > persArr[i + 1].day){
                     int temp = persArr[i + 1].day;
                     int temp2 = persArr[i + 1].month;
+                    int temp3 = persArr[i + 1].year;
                     String temp1 = persArr[i + 1].name;
                     persArr[i + 1].day = persArr[i].day;
                     persArr[i + 1].month = persArr[i].month;
+                    persArr[i + 1].year = persArr[i].year;
                     persArr[i + 1].name = persArr[i].name;
                     persArr[i].day = temp;
                     persArr[i].month = temp2;
+                    persArr[i].year = temp3;
                     persArr[i].name = temp1;
                 }
             }
@@ -47,14 +53,12 @@ public class Main {
             System.out.println(months[i]);
             for (int j = 0; j < 40; j++){
                 if (persArr[j].month == i + 1){
-                    System.out.println("    -" + persArr[j].day + ". " + persArr[j].name + persArr[j].year);
+                    LocalDate birthdate = LocalDate.of(persArr[j].year, persArr[j].month, persArr[j].day);
+                    int age = Period.between(birthdate, LocalDate.now()).getYears();
+                    System.out.println("    -" + persArr[j].day + ". " + persArr[j].name + " ("+ age + ") ");
                 }
-                //System.out.println();
             }
         }
-        //for (int j = 0; j < 40; j++){
-        //    System.out.println(persArr[j].year);
-        //}
 
 
     }
