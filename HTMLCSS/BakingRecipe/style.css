@@ -80,6 +80,15 @@ body{
 .procedurescreen li{
     padding-bottom: 40%;
 }
+.procedurescreen li img{
+    transition: 0.2s;
+}
+.procedurescreen li img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    z-index: 1;
+}
 .imgstep1{
     position: absolute;
     width: 310px;
@@ -133,4 +142,28 @@ body{
     width: 310px;
     top: 1990px;
     right: 200px;
+}
+.imprintscreen{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 270%;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+.procedurescreen a{
+    position: absolute;
+    top: 2223px;
+    padding: 20px;
+    background-color: #4F3328;
+    color: white;
+}
+.procedurescreen a:link{
+    color: white;   
+    text-decoration: none;
+}
+.procedurescreen a:visited{
+    color: white;   
+    text-decoration: none;
 }
