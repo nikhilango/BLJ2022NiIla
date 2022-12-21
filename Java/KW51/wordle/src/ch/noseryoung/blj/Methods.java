@@ -9,7 +9,7 @@ import java.util.Random;
 public class Methods {
     public static final String RED_BOLD = "\033[1;31m";
     public static final String GREEN_BOLD = "\033[1;32m";
-    public static final String RESET = "\033[0m";  // Text Reset
+    public static final String RESET = "\033[0m";
     static ArrayList<String> words = new ArrayList<>();
     public static void readData(){
         String line = "";
@@ -43,30 +43,27 @@ public class Methods {
         }
         return true;
     }
-    public static char[] isLetterInWord(String randomWord, String enteredWord){
-        char[] lettersInWord2 = new char[5];
+    public static String[] isLetterInWord(String randomWord, String enteredWord){
+        String[] lettersInWord2 = new String[5];
+        for (int i = 0; i < 5; i++){
+            lettersInWord2[i] = String.valueOf(enteredWord.charAt(i));
+        }
         for (int i = 0; i < 5; i++){
             String charToString = Character.toString(enteredWord.charAt(i));
             if (randomWord.contains(charToString)){
-                lettersInWord2[i] = enteredWord.charAt(i);
-            }
-            else {
-                lettersInWord2[i] = '*';
+                lettersInWord2[i] = RED_BOLD + charToString + RESET;
             }
         }
         return lettersInWord2;
     }
-    public static char[] isLetterInCorPos(String randomWord, String enteredWord){
-        char[] lettersInWord = new char[5];
+    public static String[] isLetterInCorPos(String randomWord, String[] enteredWord){
         for (int i = 0; i < randomWord.length(); i++){
-            if (randomWord.charAt(i) == enteredWord.charAt(i)){
-                lettersInWord[i] = randomWord.charAt(i);
-            }
-            else{
-                lettersInWord[i] = '*';
+            String charToString = Character.toString(randomWord.charAt(i));
+            charToString = RED_BOLD + charToString + RESET;
+            if (charToString.equals(enteredWord[i])){
+                enteredWord[i] =  GREEN_BOLD + randomWord.charAt(i) + RESET;
             }
         }
-
-        return lettersInWord;
+        return enteredWord;
     }
 }
