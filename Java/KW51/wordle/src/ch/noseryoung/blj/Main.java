@@ -11,7 +11,6 @@ public class Main {
     public static void main(String[] args) {
         Methods.readData();
         String randomWord = Methods.getRandomWord();
-        System.out.println(randomWord);
         Scanner scan = new Scanner(System.in);
 
         int tries = 6;
