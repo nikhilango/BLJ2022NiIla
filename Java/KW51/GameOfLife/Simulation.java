@@ -79,17 +79,19 @@ public class Simulation extends Thread {
         for (int j = 1; j < field[0].length - 1; j++){
           if (i == 1 && j == 1 || i == field.length - 1 && j == field.length - 1 || i == 1 && j == field.length - 1 || i == field.length - 1 && j == 1){
             int wrappedNeighbourCount = getWrappedNeighbourCount(i, j);
-            if (field[i][j] == 1 && wrappedNeighbourCount > 2){
-              newField[i][j] = 0;
+            if (field[i][j] == 1) {
+              if (wrappedNeighbourCount == 3 || wrappedNeighbourCount == 2) {
+                newField[i][j] = 1;
+              } else {
+                newField[i][j] = 0;
+              }
             }
-            else if (field[i][j] == 1 && wrappedNeighbourCount == 2) {
-              newField[i][j] = 1;
-            }
-            else if (field[i][j] == 1 && wrappedNeighbourCount > 3){
-              newField[i][j] = 0;
-            }
-            else if (field[i][j] == 0 && wrappedNeighbourCount == 3){
-              newField[i][j] = 1;
+            else {
+              if (wrappedNeighbourCount == 3) {
+                newField[i][j] = 1;
+              } else {
+                newField[i][j] = 0;
+              }
             }
           }
           else {
@@ -100,7 +102,8 @@ public class Simulation extends Thread {
               } else {
                 newField[i][j] = 0;
               }
-            } else {
+            }
+            else {
               if (neighbourCount == 3) {
                 newField[i][j] = 1;
               } else {
