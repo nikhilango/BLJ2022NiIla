@@ -82,14 +82,16 @@ public class Simulation extends Thread {
             if (field[i][j] == 1) {
               if (wrappedNeighbourCount == 3 || wrappedNeighbourCount == 2) {
                 newField[i][j] = 1;
-              } else {
+              }
+              else {
                 newField[i][j] = 0;
               }
             }
             else {
               if (wrappedNeighbourCount == 3) {
                 newField[i][j] = 1;
-              } else {
+              }
+              else {
                 newField[i][j] = 0;
               }
             }
@@ -99,14 +101,16 @@ public class Simulation extends Thread {
             if (field[i][j] == 1) {
               if (neighbourCount == 3 || neighbourCount == 2) {
                 newField[i][j] = 1;
-              } else {
+              }
+              else {
                 newField[i][j] = 0;
               }
             }
             else {
               if (neighbourCount == 3) {
                 newField[i][j] = 1;
-              } else {
+              }
+              else {
                 newField[i][j] = 0;
               }
             }
