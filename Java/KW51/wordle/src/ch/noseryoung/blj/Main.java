@@ -8,11 +8,17 @@ public class Main {
     public static final String RED_BOLD = "\033[1;31m";
     public static final String GREEN_BOLD = "\033[1;32m";
     public static final String RESET = "\033[0m";
+    static String[][] field = new String[6][5];
     public static void main(String[] args) {
         Methods.readData();
         String randomWord = Methods.getRandomWord();
         Scanner scan = new Scanner(System.in);
-
+        for (int j = 0; j < 6; j++) {
+            for (int i = 0; i < 5; i++) {
+                field[j][i] = " ";
+            }
+        }
+        int col = 0;
         int tries = 6;
         System.out.println("You have " + tries + " attempts. Good luck!");
         do {
@@ -35,9 +41,22 @@ public class Main {
                         return;
                     }
                     System.out.println("These letters are in the correct place in the word");
-                    for (int i = 0; i < letterInCorPos.length; i++){
-                        System.out.print(letterInCorPos[i]);
+                    for (int j = 0; j < col + 1; j++) {
+                        for (int i = 0; i < letterInCorPos.length; i++) {
+                            field[col][i] = letterInCorPos[i];
+                        }
                     }
+                    System.out.println("+-------------------+");
+                    for (int j = 0; j < 6; j++){
+                        System.out.print("| ");
+                        for (int i = 0; i < letterInCorPos.length; i++){
+                            System.out.print(field[j][i] + " | ");
+                        }
+                        System.out.println();
+                        System.out.println("+-------------------+");
+                    }
+
+                    col++;
                     System.out.println();
                     tries--;
                     System.out.println("You have " + tries + " attempts left.");
