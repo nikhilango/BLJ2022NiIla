@@ -40,7 +40,6 @@ public class Main {
                         System.out.println("YAYYY YOU FOUND THE WORD");
                         return;
                     }
-                    System.out.println("These letters are in the correct place in the word");
                     for (int j = 0; j < col + 1; j++) {
                         for (int i = 0; i < letterInCorPos.length; i++) {
                             field[col][i] = letterInCorPos[i];
