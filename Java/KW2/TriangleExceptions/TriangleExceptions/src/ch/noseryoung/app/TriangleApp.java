@@ -101,17 +101,6 @@ public class TriangleApp {
   }
 
   /**
-   * This method prompts the user to give an input for a triangle side.
-   * 
-   * @param side of type String to display as title for the prompt.
-   * @return the input of type String.
-   */
-  private String promptSide(String side) {
-    // todo
-    return null;
-  }
-
-  /**
    * This method prompts the user to give an input.<br>
    * "q": Quits the program.<br>
    * "c": Continues the program.<br>
@@ -156,12 +145,12 @@ public class TriangleApp {
       hasLettersAndSymbols = true;
       throw new IllegalTriangleSideException();
     }
-    if (sideA == 0 || sideB == 0 || sideC == 0) {
+    if (0 == sideA || 0 == sideB || 0 == sideC) {
       // throws ZeroTriangleSideException
       throw new ZeroTriangleSideException();
     }
     // validates other triangle cases
-    else if (sideA < 0 || sideB < 0 || sideC < 0) {
+    else if (0 > sideA  || 0 > sideB || 0 > sideC) {
       throw new NegativeTriangleSideException();
     }
     else if (sideA + sideB == sideC) {
@@ -194,12 +183,12 @@ public class TriangleApp {
     if (hasLettersAndSymbols){
       return "ERR96TF";
     }
-    else if (sideA == 0 || sideB == 0 || sideC == 0) {
+    else if (0 == sideA || 0 == sideB || 0 == sideC) {
       // throws ZeroTriangleSideException
       return "ERR16TF";
     }
     // validates other triangle cases
-    else if (sideA < 0 || sideB < 0 || sideC < 0) {
+    else if (0 > sideA  || 0 > sideB || 0 > sideC) {
       return "ERR12TF";
     }
     else if (sideA + sideB == sideC) {
