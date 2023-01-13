@@ -1,6 +1,5 @@
 package ch.noseryoung.blj;
-import java.time.LocalDate;
-import java.time.Period;
+
 
 public class Person {
     public int year;

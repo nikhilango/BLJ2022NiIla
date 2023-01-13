@@ -1,20 +1,9 @@
+import java.util.Scanner;
+
 public class Main {
-
-    static int MAX = 5;
-    static Car[] Slot = new Car[MAX];
-
     public static void main(String[] args) {
-
-
-        Slot[0] = new Car("1234", "White");
-        Slot[1] = new Car("5678", "Black");
-
+        double num1 = 10;
+        double num2 = 8.5;
+        System.out.println(num1 - num2);
     }
-
-    public static void Allot() {
-        for (int i = 0; i <= Slot.length; i++) {
-            System.out.println(Slot.getNo);
-        }
-    }
-
-
+}

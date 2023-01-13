@@ -99,7 +99,6 @@ public class SimulationPanel extends JPanel implements PropertyChangeListener {
       for (int y = 0; y < newField[x].length; y++) {
         int scaledX = x * scale + scale / 2;
         int scaledY = y * scale + scale / 2;
-
         if (newField[x][y] == 1) {
           g2d.setColor(Color.BLACK);
         } else {
