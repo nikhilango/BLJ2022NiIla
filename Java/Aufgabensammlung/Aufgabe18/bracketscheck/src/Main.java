@@ -1,12 +1,12 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println(checkBrackets("{(xxx,yyy)}"));
-        System.out.println(checkBrackets("{)(acd,bcvfs}"));
-        System.out.println(checkBrackets("{(xxx},yyy)"));
-        System.out.println(checkBrackets("[(xxx),yyy]"));
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a bracket order: ");
+        String bracketorder = scan.nextLine();
+        checkBrackets(bracketorder);
     }
     public static String checkBrackets(String str) {
         Stack<Character> object  = new Stack<>();
