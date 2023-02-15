@@ -4,30 +4,34 @@ import java.util.Stack;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter a bracket order: ");
-        String bracketorder = scan.nextLine();
-        checkBrackets(bracketorder);
+        System.out.println("Enter a bracket order: ");
+        String order = scan.nextLine();
+
+        System.out.println("The bracket order is closed: " + checkBrackets(order));
     }
-    public static String checkBrackets(String str) {
+    public static boolean checkBrackets(String order) {
         Stack<Character> object  = new Stack<>();
-        for(int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
+        for(int i = 0; i < order.length(); i++) {
+            char ch = order.charAt(i);
             if(ch == '[' || ch == '(' || ch == '{' ) {
                 object.push(ch);
-            } else if(ch == ']') {
+            }
+            else if(ch == ']') {
                 if(object.isEmpty() || object.pop() != '[') {
-                    return "The brackets don't close";
+                    return false;
                 }
-            } else if(ch == ')') {
+            }
+            else if(ch == ')') {
                 if(object.isEmpty() || object.pop() != '(') {
-                    return "The brackets don't close";
+                    return false;
                 }
-            } else if(ch == '}') {
+            }
+            else if(ch == '}') {
                 if(object.isEmpty() || object.pop() != '{') {
-                    return "The brackets don't close";
+                    return false;
                 }
             }
         }
-        return "The brackets close";
+        return object.isEmpty();
     }
 }
