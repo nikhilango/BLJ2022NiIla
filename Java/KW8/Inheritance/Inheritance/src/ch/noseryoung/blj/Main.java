@@ -8,13 +8,16 @@ public class Main {
         Books book = new Books("The three investigators", " Robert Arthur", 1964);
         CDs cd = new CDs("Mission Impossible", "Christopher McQuarrie", "CD-DA");
         Videogames videogame = new Videogames("GTA V", "Leslie Benzies", 65, 5);
+        Movies movie = new Movies("The Dictator", "Larry Charles", 2012, 18);
 
         book.printShelf();
         cd.printShelf();
         videogame.printShelf();
+        movie.printShelf();
 
         Shelves.add(book);
         Shelves.add(cd);
         Shelves.add(videogame);
+        Shelves.add(movie);
     }
 }
