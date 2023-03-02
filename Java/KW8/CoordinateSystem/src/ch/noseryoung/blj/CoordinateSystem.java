@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class CoordinateSystem {
     private int CoordinateSystemSize;
 
-    private ArrayList AllPoints;
+    private ArrayList Shapes;
 
-    public CoordinateSystem(int CoordinateSystemSize, ArrayList AllPoints){
-        this.AllPoints = AllPoints;
+    public CoordinateSystem(int CoordinateSystemSize, ArrayList Shapes){
+        this.Shapes = Shapes;
         this.CoordinateSystemSize = CoordinateSystemSize;
     }
 
@@ -16,7 +16,7 @@ public class CoordinateSystem {
         return CoordinateSystemSize;
     }
 
-    public ArrayList<CSPoint> getAllPoints() {
-        return AllPoints;
+    public ArrayList<CSPoint> getShapes() {
+        return Shapes;
     }
 }

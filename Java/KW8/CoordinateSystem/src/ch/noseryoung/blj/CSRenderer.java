@@ -8,6 +8,7 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Random;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -19,7 +20,7 @@ import javax.swing.JPanel;
  * @author surber
  *
  */
-public class CSRenderer extends JPanel {
+public class CSRenderer extends JPanel{
 
     private CoordinateSystem cs;
     private JFrame mainFrame;
@@ -28,8 +29,8 @@ public class CSRenderer extends JPanel {
     private int fieldScale;
     private int pointSize;
 
-    private final int OFFSET_MID;
-    private final int OFFSET_END;
+    private int OFFSET_MID;
+    private int OFFSET_END;
 
     /**
      * This constructor sets up the window where the coordinate system will be
@@ -70,9 +71,9 @@ public class CSRenderer extends JPanel {
      *
      * @param cs The coordinate system (including all points) to draw.
      */
-    public CSRenderer(CoordinateSystem cs) {
+    /*public CSRenderer(CoordinateSystem cs) {
         this(cs, 1, 3);
-    }
+    }*/
 
     /**
      * This method gets called automagically once the panel, where the coordinate
@@ -107,10 +108,8 @@ public class CSRenderer extends JPanel {
 
         // all points
         g2d.setStroke(new BasicStroke(pointSize));
-        for (CSPoint point : cs.getAllPoints()) {
-            CSPoint translatedPoint = translatePoint(point);
-            g2d.setColor(Color.BLUE);
-            g2d.drawLine(translatedPoint.x, translatedPoint.y, translatedPoint.x, translatedPoint.y);
+        for (Showable s : cs.getShapes()){
+            s.showShapes(g2d, cs, fieldScale);
         }
     }
 
@@ -136,10 +135,10 @@ public class CSRenderer extends JPanel {
      */
     private void setupMouseMotionListener(int leeway) {
         int scaledLeeway = leeway + pointSize / 2;
-        this.addMouseMotionListener(new MouseAdapter() {
+        /*this.addMouseMotionListener(new MouseAdapter() {
             @Override
             public void mouseMoved(MouseEvent me) {
-                for (CSPoint point : cs.getAllPoints()) {
+                for (CSPoint point : cs.getShapes()) {
                     CSPoint tp = translatePoint(point);
 
                     if ((me.getPoint().x >= tp.x - scaledLeeway && me.getPoint().x <= tp.x + scaledLeeway)
@@ -148,6 +147,6 @@ public class CSRenderer extends JPanel {
                     }
                 }
             }
-        });
+        });*/
     }
 }
