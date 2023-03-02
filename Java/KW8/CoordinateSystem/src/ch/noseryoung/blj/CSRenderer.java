@@ -8,6 +8,7 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.PackedColorModel;
 import java.util.Random;
 
 import javax.swing.JFrame;
@@ -108,9 +109,14 @@ public class CSRenderer extends JPanel{
 
         // all points
         g2d.setStroke(new BasicStroke(pointSize));
-        for (Showable s : cs.getShapes()){
+        for (Showable s : cs.getShapes()) {
             s.showShapes(g2d, cs, fieldScale);
         }
+        g2d.setColor(Color.red);
+        int xPoly[] = {160, 260, 325, 350, 285, 110};
+        int yPoly[] = {160, 110, 135, 240, 385, 310};
+        g2d.drawPolygon(xPoly, yPoly, xPoly.length);
+        g2d.drawOval(250, 250, 50, 50);
     }
 
     /**
