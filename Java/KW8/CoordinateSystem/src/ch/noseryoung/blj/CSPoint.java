@@ -18,6 +18,6 @@ public class CSPoint extends Point implements Showable{
     public void showShapes(Graphics g2d, CoordinateSystem cs, int fieldScale) {
         CSPoint translatedPoint = translatePoint(this, cs, fieldScale);
         g2d.setColor(Color.BLUE);
-        g2d.drawLine(translatedPoint.x, translatedPoint.y, translatedPoint.x, translatedPoint.y);
+        g2d.drawLine(translatedPoint.x + 16, translatedPoint.y + 20, translatedPoint.x + 16, translatedPoint.y + 20);
     }
 }
