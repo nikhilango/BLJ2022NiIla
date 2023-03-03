@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9492f98d-e22d-4fe1-a821-3c5b46c2dfd7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../JavaCodaKata/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C/KW40/lightsOut/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C/KW40/lightsOut/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KW45/morseCodeTranslator/src/ch/noseryoung/blj/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW45/morseCodeTranslator/src/ch/noseryoung/blj/Translator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CSPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CSPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CSRenderer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CSRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CSRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CoordinateSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CoordinateSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KW8/Inheritance/Inheritance/out/production/Inheritance/ch/noseryoung/blj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/Inheritance/Inheritance/out/production/Inheritance/ch/noseryoung/blj/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KW8/Inheritance/Inheritance/src/ch/noseryoung/blj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/Inheritance/Inheritance/src/ch/noseryoung/blj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../testarea/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../testarea/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MSSRTmEwV8bPfuhamYBtSltpHf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/Java/KW9/JavaCodeKata",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9492f98d-e22d-4fe1-a821-3c5b46c2dfd7" name="Changes" comment="" />
+      <created>1677759586994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677759586994</updated>
+    </task>
+    <servers />
+  </component>
+</project>
