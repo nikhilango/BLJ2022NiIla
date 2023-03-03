@@ -32,10 +32,8 @@ public class Set implements BaseCollection{
         if (getNumberOfElem() >= dimension) {
             throw new Exception("There are more elements than the set dimension!");
         }
-        //else if (!isElem(elem)) {
-            elements[getNumberOfElem()] = elem;
-            count++;
-        //}
+        elements[getNumberOfElem()] = elem;
+        count++;
     }
 
     public Set union(Set set2) throws Exception {
