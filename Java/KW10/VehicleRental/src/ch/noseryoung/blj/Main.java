@@ -24,7 +24,7 @@ public class Main {
             System.out.println("                : ADD AIRCRAFT   3");
             System.out.println("                : ADD CONTRACT   4");
             System.out.println("                : SHOW PERSONS   5");
-            System.out.println("                : SHOW CARS      6");
+            System.out.println("                : SHOW VEHICLES  6");
             System.out.println("                : SHOW CONTRACTS 7");
             System.out.println("*****************************************************");
             int mode = scan.nextInt();
@@ -83,42 +83,16 @@ public class Main {
                 case 5:
                     for (int i = 0; i < customerList.size(); i++){
                         customerList.get(i).summarize();
-                        /*System.out.println("**************************");
-                        System.out.println("Firstname  : " +customerList.get(i).getFirstname());
-                        System.out.println("Lastname   : " +customerList.get(i).getLastname());
-                        System.out.println("Age        : " +customerList.get(i).getAge());
-                        System.out.println("Cutomer ID : " +customerList.get(i).getCustomerID());*/
                     }
                     break;
                 case 6:
                     for (int i = 0; i < vehicles.size(); i++){
                         vehicles.get(i).summarize();
-                        /*System.out.println("**************************");
-                        System.out.println("Brand         :" + vehicles.get(i).getBrand());
-                        System.out.println("Model         :" + vehicles.get(i).getModel());
-                        System.out.println("Horsepower    :" + vehicles.get(i).getPs());
-                        System.out.println("Seats         :" + vehicles.get(i).getSeats());
-                        System.out.println("Price         :" + vehicles.get(i).getPrice());
-                        System.out.println("Car ID        :" + vehicles.get(i).getCarID());*/
                     }
                     break;
                 case 7:
                     for (int i = 0; i < contracts.size(); i++){
                         contracts.get(i).showContract();
-                        /*String age1 = valueOf(customerList.get(i).getAge());
-                        String ps1 = valueOf(vehicles.get(i).getPs());
-                        String customerID1 = valueOf(customerList.get(i).getCustomerID());
-                        String seats1 = valueOf(vehicles.get(i).getSeats());
-                        String price1 = valueOf(vehicles.get(i).getPrice());
-                        System.out.println("+++++++++++PERSON++++++++++++++++++++++++++VEHICLE+++++++++++++");
-                        System.out.println("| Firstname  :  " + stringAdjust(customerList.get(i).getFirstname()) + "|" + "Brand:       " + stringAdjust(vehicles.get(i).getBrand()) + "|");
-                        System.out.println("| Lastname   :  " + stringAdjust(customerList.get(i).getLastname()) + "|" + "Model:       " +  stringAdjust(vehicles.get(i).getModel()) + "|");
-                        System.out.println("| Age        :  " + stringAdjust(age1) + "|" + "Horsepower:  " +  stringAdjust(ps1) + "|");
-                        System.out.println("| Customer ID:  " + stringAdjust(customerID1) + "|" + "Seats:       " + stringAdjust(seats1) + "|");
-                        System.out.println("| Price      :                                " + stringAdjust(price1 + " CHF") + "|");
-                        System.out.println("| Start Date :                                " + stringAdjust(String.valueOf(contracts.get(i).getStartDate())) + "|");
-                        System.out.println("| End Date   :                                " + stringAdjust(String.valueOf(contracts.get(i).getEndDate())) + "|");
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");*/
                     }
                     break;
                 default:
