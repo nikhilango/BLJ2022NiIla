@@ -34,6 +34,12 @@ public class VehicleRentalManager {
         aircraft.summarize();
     }
 
+    public void addBoat(String brand, String model, int ps, int seats, int price, String typ, int boatID){
+        Boats boat = new Boats(brand, model, ps, seats, price, typ, boatID);
+        vehicles.add(boat);
+        boat.summarize();
+    }
+
     public void addContract(int customerID, int vehicleID, LocalDate startDate, LocalDate endDate) throws Exception {
         Contract contract = new Contract((Person) customerList.get(customerID), (Cars) vehicles.get(vehicleID), startDate, endDate);
         contract.checkForInvalidity((Person) customerList.get(customerID), denyList);

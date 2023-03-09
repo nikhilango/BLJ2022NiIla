@@ -22,10 +22,11 @@ public class Main {
             System.out.println("SELECT AN OPTION: ADD PERSON     1");
             System.out.println("                : ADD CAR        2");
             System.out.println("                : ADD AIRCRAFT   3");
-            System.out.println("                : ADD CONTRACT   4");
-            System.out.println("                : SHOW PERSONS   5");
-            System.out.println("                : SHOW VEHICLES  6");
-            System.out.println("                : SHOW CONTRACTS 7");
+            System.out.println("                : ADD BOAT       4");
+            System.out.println("                : ADD CONTRACT   5");
+            System.out.println("                : SHOW PERSONS   6");
+            System.out.println("                : SHOW VEHICLES  7");
+            System.out.println("                : SHOW CONTRACTS 8");
             System.out.println("*****************************************************");
             int mode = scan.nextInt();
             VehicleRentalManager rental = new VehicleRentalManager(customerList, denyList, contracts, vehicles);
@@ -66,6 +67,21 @@ public class Main {
                     rental.addAircraft(abrand, amodel, aps, aseats, aprice, vehicleID++);
                     break;
                 case 4:
+                    System.out.println("ENTER BOAT BRAND: ");
+                    String bbrand = scan1.nextLine();
+                    System.out.println("ENTER BOAT MODEL: ");
+                    String bmodel = scan2.nextLine();
+                    System.out.println("ENTER HORSEPOWER OF THE BOAT: ");
+                    int bps = scan.nextInt();
+                    System.out.println("ENTER AMOUNT OF SEATS: ");
+                    int bseats = scan1.nextInt();
+                    System.out.println("ENTER BOAT TYP:  ");
+                    String btyp = scan2.nextLine();
+                    System.out.println("ENTER PRICE: ");
+                    int bprice = scan.nextInt();
+                    rental.addBoat(bbrand, bmodel, bps, bseats, bprice, btyp, vehicleID++);
+                    break;
+                case 5:
                     System.out.println("SELECT PERSONID: ");
                     int personID = scan1.nextInt();
                     System.out.println("SELECT VEHICLE ID: ");
@@ -73,24 +89,24 @@ public class Main {
                     System.out.println("SELECT STARTDATE: ");
                     int startDay = scan.nextInt();
                     int startMonth = scan1.nextInt();
-                    int startYear = scan2.nextInt();
+                     int startYear = scan2.nextInt();
                     System.out.println("SELECT ENDDATE: ");
                     int endDay = scan.nextInt();
                     int endMonth = scan1.nextInt();
                     int endYear = scan2.nextInt();
                     rental.addContract(personID, vehicleID1, LocalDate.of(startYear, startMonth, startDay), LocalDate.of(endYear, endMonth, endDay));
                     break;
-                case 5:
+                case 6:
                     for (int i = 0; i < customerList.size(); i++){
                         customerList.get(i).summarize();
                     }
                     break;
-                case 6:
+                case 7:
                     for (int i = 0; i < vehicles.size(); i++){
                         vehicles.get(i).summarize();
                     }
                     break;
-                case 7:
+                case 8:
                     for (int i = 0; i < contracts.size(); i++){
                         contracts.get(i).showContract();
                     }

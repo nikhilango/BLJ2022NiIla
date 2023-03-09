@@ -12,7 +12,7 @@ public class Person {
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
-        this. customerID = customerID;
+        this.customerID = customerID;
     }
 
     public int getAge() {
