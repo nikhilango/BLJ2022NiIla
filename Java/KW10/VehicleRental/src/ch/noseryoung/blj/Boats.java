@@ -23,4 +23,8 @@ public class Boats extends Cars{
         System.out.println("BoatID      :  " + boatID);
         System.out.println("****************************");
     }
+
+    public String getTyp() {
+        return typ;
+    }
 }

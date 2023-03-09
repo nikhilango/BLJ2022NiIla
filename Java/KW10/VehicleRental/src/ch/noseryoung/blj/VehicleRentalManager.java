@@ -46,4 +46,10 @@ public class VehicleRentalManager {
         contracts.add(contract);
         contract.showContract();
     }
+    public void addBoatContract(int customerID, int vehicleID, LocalDate startDate, LocalDate endDate) throws Exception {
+        Contract contract = new Contract((Person) customerList.get(customerID), (Boats) vehicles.get(vehicleID), startDate, endDate);
+        contract.checkForInvalidity((Person) customerList.get(customerID), denyList);
+        contracts.add(contract);
+        contract.showBoatContract();
+    }
 }

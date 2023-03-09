@@ -13,7 +13,8 @@ public class Main {
         ArrayList<Cars> vehicles = new ArrayList<>();
         int customerID = 0;
         int vehicleID = 0;
-        while(true){
+        boolean isRunning = true;
+        while(isRunning){
             Scanner scan = new Scanner(System.in);
             Scanner scan1 = new Scanner(System.in);
             Scanner scan2 = new Scanner(System.in);
@@ -27,6 +28,7 @@ public class Main {
             System.out.println("                : SHOW VEHICLES    7");
             System.out.println("                : SHOW CONTRACTS   8");
             System.out.println("                : ADD TO DENY LIST 9");
+            System.out.println("                : EXIT             0");
             System.out.println("*****************************************************");
             int mode = scan.nextInt();
             VehicleRentalManager rental = new VehicleRentalManager(customerList, denyList, contracts, vehicles);
@@ -94,7 +96,12 @@ public class Main {
                     int endDay = scan.nextInt();
                     int endMonth = scan1.nextInt();
                     int endYear = scan2.nextInt();
-                    rental.addContract(personID, vehicleID1, LocalDate.of(startYear, startMonth, startDay), LocalDate.of(endYear, endMonth, endDay));
+                    if (vehicles.get(vehicleID1).getClass().getSimpleName().equals("Cars") || vehicles.get(vehicleID1).getClass().getSimpleName().equals("Aircrafts")){
+                        rental.addContract(personID, vehicleID1, LocalDate.of(startYear, startMonth, startDay), LocalDate.of(endYear, endMonth, endDay));
+                    }
+                    else if (vehicles.get(vehicleID1).getClass().getSimpleName().equals("Boats")){
+                        rental.addBoatContract(personID, vehicleID1, LocalDate.of(startYear, startMonth, startDay), LocalDate.of(endYear, endMonth, endDay));
+                    }
                     break;
                 case 6:
                     for (int i = 0; i < customerList.size(); i++){
@@ -116,6 +123,10 @@ public class Main {
                     int denylistedID = scan.nextInt();
                     denyList.add(customerList.get(denylistedID));
                     System.out.println("THE PERSON HAS BEEN ENTERED INTO THE DENY LIST!");
+                    break;
+                case 0:
+                    isRunning = false;
+                    System.out.println("THANK YOU FOR VISITING OUR DEALERSHIP!");
                     break;
                 default:
                     System.out.println("Enter a valid mode!");

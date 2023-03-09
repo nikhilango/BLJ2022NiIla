@@ -9,12 +9,19 @@ import static java.lang.String.valueOf;
 public class Contract {
     private Person person;
     private Cars car;
+    private Boats boat;
     private LocalDate startDate;
     private LocalDate endDate;
 
     public Contract(Person person, Cars car, LocalDate startDate, LocalDate endDate){
         this.person = person;
         this.car = car;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+    public Contract(Person person, Boats boat, LocalDate startDate, LocalDate endDate){
+        this.person = person;
+        this.boat = boat;
         this.startDate = startDate;
         this.endDate = endDate;
     }
@@ -28,7 +35,7 @@ public class Contract {
             if (person.getCustomerID() == denyedCustomer.getCustomerID()){
                 throw new Exception("This person is blacklisted!");
             }
-            else if (startDate.compareTo(endDate) > 0) {
+            else if (startDate.isAfter(endDate)) {
                 throw new Exception("The leasedates are overlapping!");
             }
         }
@@ -45,6 +52,23 @@ public class Contract {
         System.out.println("| Lastname   :  " + stringAdjust(person.getLastname()) + "|" + "Model:       " +  stringAdjust(car.getModel()) + "|");
         System.out.println("| Age        :  " + stringAdjust(age) + "|" + "Horsepower:  " +  stringAdjust(ps) + "|");
         System.out.println("| Customer ID:  " + stringAdjust(customerID) + "|" + "Seats:       " + stringAdjust(seats) + "|");
+        System.out.println("| Price      :                                " + stringAdjust(price + " CHF") + "|");
+        System.out.println("| Start Date :                                " + stringAdjust(String.valueOf(startDate)) + "|");
+        System.out.println("| End Date   :                                " + stringAdjust(String.valueOf(endDate)) + "|");
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+    }
+    public void showBoatContract(){
+        String age = valueOf(person.getAge());
+        String ps = valueOf(boat.getPs());
+        String customerID = valueOf(person.getCustomerID());
+        String seats = valueOf(boat.getSeats());
+        String price = valueOf(boat.getPrice());
+        System.out.println("+++++++++++PERSON++++++++++++++++++++++++++VEHICLE+++++++++++++");
+        System.out.println("| Firstname  :  " + stringAdjust(person.getFirstname()) + "|" + "Brand:       " + stringAdjust(boat.getBrand()) + "|");
+        System.out.println("| Lastname   :  " + stringAdjust(person.getLastname()) + "|" + "Model:       " +  stringAdjust(boat.getModel()) + "|");
+        System.out.println("| Age        :  " + stringAdjust(age) + "|" + "Horsepower:  " +  stringAdjust(ps) + "|");
+        System.out.println("| Customer ID:  " + stringAdjust(customerID) + "|" + "Seats:       " + stringAdjust(seats) + "|");
+        System.out.println("| Typ        :                                " + stringAdjust(boat.getTyp()) + "|");
         System.out.println("| Price      :                                " + stringAdjust(price + " CHF") + "|");
         System.out.println("| Start Date :                                " + stringAdjust(String.valueOf(startDate)) + "|");
         System.out.println("| End Date   :                                " + stringAdjust(String.valueOf(endDate)) + "|");
