@@ -1,12 +1,12 @@
 package ch.noseryoung.blj;
 
 public class Cars {
-    private String brand;
-    private String model;
-    private int ps;
-    private int seats;
-    private int price;
-    private int carID;
+    public String brand;
+    public String model;
+    public int ps;
+    public int seats;
+    public int price;
+    public int carID;
 
     public Cars(String brand, String model, int ps, int seats, int price, int carID){
         this.brand = brand;

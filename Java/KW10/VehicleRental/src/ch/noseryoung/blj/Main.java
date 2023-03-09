@@ -2,7 +2,6 @@ package ch.noseryoung.blj;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 import static java.lang.String.valueOf;
@@ -22,10 +21,11 @@ public class Main {
             System.out.println("*************WELCOME TO ILANGO CARS GmbH*************");
             System.out.println("SELECT AN OPTION: ADD PERSON     1");
             System.out.println("                : ADD CAR        2");
-            System.out.println("                : ADD CONTRACT   3");
-            System.out.println("                : SHOW PERSONS   4");
-            System.out.println("                : SHOW CARS      5");
-            System.out.println("                : SHOW CONTRACTS 6");
+            System.out.println("                : ADD AIRCRAFT   3");
+            System.out.println("                : ADD CONTRACT   4");
+            System.out.println("                : SHOW PERSONS   5");
+            System.out.println("                : SHOW CARS      6");
+            System.out.println("                : SHOW CONTRACTS 7");
             System.out.println("*****************************************************");
             int mode = scan.nextInt();
             VehicleRentalManager rental = new VehicleRentalManager(customerList, denyList, contracts, vehicles);
@@ -50,13 +50,26 @@ public class Main {
                     int seats = scan1.nextInt();
                     System.out.println("ENTER PRICE: ");
                     int price = scan2.nextInt();
-                    rental.addVehicles(brand, model, ps, seats, price, vehicleID++);
+                    rental.addCar(brand, model, ps, seats, price, vehicleID++);
                     break;
                 case 3:
+                    System.out.println("ENTER AIRCRAFT BRAND: ");
+                    String abrand = scan1.nextLine();
+                    System.out.println("ENTER AIRCRAFT MODEL: ");
+                    String amodel = scan2.nextLine();
+                    System.out.println("ENTER HORSEPOWER OF AIRCRAFT: ");
+                    int aps = scan.nextInt();
+                    System.out.println("ENTER AMOUNT OF SEATS: ");
+                    int aseats = scan1.nextInt();
+                    System.out.println("ENTER PRICE: ");
+                    int aprice = scan2.nextInt();
+                    rental.addAircraft(abrand, amodel, aps, aseats, aprice, vehicleID++);
+                    break;
+                case 4:
                     System.out.println("SELECT PERSONID: ");
                     int personID = scan1.nextInt();
-                    System.out.println("SELECT CAR ID: ");
-                    int carID = scan2.nextInt();
+                    System.out.println("SELECT VEHICLE ID: ");
+                    int vehicleID1 = scan2.nextInt();
                     System.out.println("SELECT STARTDATE: ");
                     int startDay = scan.nextInt();
                     int startMonth = scan1.nextInt();
@@ -65,9 +78,9 @@ public class Main {
                     int endDay = scan.nextInt();
                     int endMonth = scan1.nextInt();
                     int endYear = scan2.nextInt();
-                    rental.addContract(personID, carID, LocalDate.of(startYear, startMonth, startDay), LocalDate.of(endYear, endMonth, endDay));
+                    rental.addContract(personID, vehicleID1, LocalDate.of(startYear, startMonth, startDay), LocalDate.of(endYear, endMonth, endDay));
                     break;
-                case 4:
+                case 5:
                     for (int i = 0; i < customerList.size(); i++){
                         customerList.get(i).summarize();
                         /*System.out.println("**************************");
@@ -77,7 +90,7 @@ public class Main {
                         System.out.println("Cutomer ID : " +customerList.get(i).getCustomerID());*/
                     }
                     break;
-                case 5:
+                case 6:
                     for (int i = 0; i < vehicles.size(); i++){
                         vehicles.get(i).summarize();
                         /*System.out.println("**************************");
@@ -89,7 +102,7 @@ public class Main {
                         System.out.println("Car ID        :" + vehicles.get(i).getCarID());*/
                     }
                     break;
-                case 6:
+                case 7:
                     for (int i = 0; i < contracts.size(); i++){
                         contracts.get(i).showContract();
                         /*String age1 = valueOf(customerList.get(i).getAge());

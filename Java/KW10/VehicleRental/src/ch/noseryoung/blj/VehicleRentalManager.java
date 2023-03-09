@@ -2,7 +2,6 @@ package ch.noseryoung.blj;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class VehicleRentalManager {
     private ArrayList customerList;
@@ -23,10 +22,16 @@ public class VehicleRentalManager {
         person.summarize();
     }
 
-    public void addVehicles(String brand, String model, int ps, int seats, int price, int carID){
+    public void addCar(String brand, String model, int ps, int seats, int price, int carID){
         Cars car = new Cars(brand, model, ps, seats, price, carID);
         vehicles.add(car);
         car.summarize();
+    }
+
+    public void addAircraft(String brand, String model, int ps, int seats, int price, int aircraftID){
+        Aircrafts aircraft = new Aircrafts(brand, model, ps, seats, price, aircraftID);
+        vehicles.add(aircraft);
+        aircraft.summarize();
     }
 
     public void addContract(int customerID, int vehicleID, LocalDate startDate, LocalDate endDate) throws Exception {
