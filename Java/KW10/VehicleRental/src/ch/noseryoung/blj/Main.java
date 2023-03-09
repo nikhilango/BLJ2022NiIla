@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static java.lang.String.valueOf;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -19,14 +18,15 @@ public class Main {
             Scanner scan1 = new Scanner(System.in);
             Scanner scan2 = new Scanner(System.in);
             System.out.println("*************WELCOME TO ILANGO CARS GmbH*************");
-            System.out.println("SELECT AN OPTION: ADD PERSON     1");
-            System.out.println("                : ADD CAR        2");
-            System.out.println("                : ADD AIRCRAFT   3");
-            System.out.println("                : ADD BOAT       4");
-            System.out.println("                : ADD CONTRACT   5");
-            System.out.println("                : SHOW PERSONS   6");
-            System.out.println("                : SHOW VEHICLES  7");
-            System.out.println("                : SHOW CONTRACTS 8");
+            System.out.println("SELECT AN OPTION: ADD PERSON       1");
+            System.out.println("                : ADD CAR          2");
+            System.out.println("                : ADD AIRCRAFT     3");
+            System.out.println("                : ADD BOAT         4");
+            System.out.println("                : ADD CONTRACT     5");
+            System.out.println("                : SHOW PERSONS     6");
+            System.out.println("                : SHOW VEHICLES    7");
+            System.out.println("                : SHOW CONTRACTS   8");
+            System.out.println("                : ADD TO DENY LIST 9");
             System.out.println("*****************************************************");
             int mode = scan.nextInt();
             VehicleRentalManager rental = new VehicleRentalManager(customerList, denyList, contracts, vehicles);
@@ -89,7 +89,7 @@ public class Main {
                     System.out.println("SELECT STARTDATE: ");
                     int startDay = scan.nextInt();
                     int startMonth = scan1.nextInt();
-                     int startYear = scan2.nextInt();
+                    int startYear = scan2.nextInt();
                     System.out.println("SELECT ENDDATE: ");
                     int endDay = scan.nextInt();
                     int endMonth = scan1.nextInt();
@@ -110,6 +110,12 @@ public class Main {
                     for (int i = 0; i < contracts.size(); i++){
                         contracts.get(i).showContract();
                     }
+                    break;
+                case 9:
+                    System.out.println("SELECT PERSON ID TO PUT IN DENY LIST: ");
+                    int denylistedID = scan.nextInt();
+                    denyList.add(customerList.get(denylistedID));
+                    System.out.println("THE PERSON HAS BEEN ENTERED INTO THE DENY LIST!");
                     break;
                 default:
                     System.out.println("Enter a valid mode!");

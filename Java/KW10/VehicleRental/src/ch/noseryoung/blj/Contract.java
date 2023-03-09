@@ -2,7 +2,6 @@ package ch.noseryoung.blj;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 import static java.lang.String.valueOf;
 
@@ -62,13 +61,5 @@ public class Contract {
             string = string + space;
         }
         return string;
-    }
-
-    public LocalDate getStartDate() {
-        return startDate;
-    }
-
-    public LocalDate getEndDate() {
-        return endDate;
     }
 }
