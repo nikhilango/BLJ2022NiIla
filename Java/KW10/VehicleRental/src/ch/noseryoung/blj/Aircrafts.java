@@ -1,6 +1,6 @@
 package ch.noseryoung.blj;
 
-public class Aircrafts extends Cars{
+public class Aircrafts extends Cars implements Summarizable{
 
     private int aircraftID;
 

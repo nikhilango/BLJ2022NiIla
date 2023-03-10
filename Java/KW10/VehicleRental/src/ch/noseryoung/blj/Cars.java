@@ -1,6 +1,6 @@
 package ch.noseryoung.blj;
 
-public class Cars {
+public class Cars implements Summarizable{
     public String brand;
     public String model;
     public int ps;

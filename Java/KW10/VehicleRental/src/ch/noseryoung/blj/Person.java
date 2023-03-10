@@ -1,7 +1,7 @@
 package ch.noseryoung.blj;
 
 
-public class Person {
+public class Person implements Summarizable{
     private String firstname;
     private String lastname;
     private int age;

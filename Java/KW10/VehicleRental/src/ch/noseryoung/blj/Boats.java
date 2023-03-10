@@ -1,6 +1,6 @@
 package ch.noseryoung.blj;
 
-public class Boats extends Cars{
+public class Boats extends Cars implements Summarizable{
 
     private String typ;
     private int boatID;
