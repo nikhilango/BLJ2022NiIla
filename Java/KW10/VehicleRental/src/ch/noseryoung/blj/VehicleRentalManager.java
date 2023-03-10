@@ -42,13 +42,13 @@ public class VehicleRentalManager {
 
     public void addContract(int customerID, int vehicleID, LocalDate startDate, LocalDate endDate) throws Exception {
         Contract contract = new Contract((Person) customerList.get(customerID), (Cars) vehicles.get(vehicleID), startDate, endDate);
-        contract.checkForInvalidity((Person) customerList.get(customerID), denyList);
+        contract.checkForInvalidity((Person) customerList.get(customerID), denyList, startDate, endDate);
         contracts.add(contract);
         contract.showContract();
     }
     public void addBoatContract(int customerID, int vehicleID, LocalDate startDate, LocalDate endDate) throws Exception {
         Contract contract = new Contract((Person) customerList.get(customerID), (Boats) vehicles.get(vehicleID), startDate, endDate);
-        contract.checkForInvalidity((Person) customerList.get(customerID), denyList);
+        contract.checkForInvalidity((Person) customerList.get(customerID), denyList, startDate, endDate);
         contracts.add(contract);
         contract.showBoatContract();
     }

@@ -26,17 +26,17 @@ public class Contract {
         this.endDate = endDate;
     }
 
-    public void checkForInvalidity(Person person, ArrayList denyList) throws Exception{
+    public void checkForInvalidity(Person person, ArrayList denyList, LocalDate startDate1, LocalDate endDate1) throws Exception{
         if (person.getAge() < 18){
             throw new Exception("This person is a minor!");
+        }
+        else if (startDate1.isAfter(endDate1)) {
+            throw new Exception("The leasedates are overlapping!");
         }
         for(int i = 0; i < denyList.size(); i++){
             Person denyedCustomer = (Person) denyList.get(i);
             if (person.getCustomerID() == denyedCustomer.getCustomerID()){
                 throw new Exception("This person is blacklisted!");
-            }
-            else if (startDate.isAfter(endDate)) {
-                throw new Exception("The leasedates are overlapping!");
             }
         }
     }
