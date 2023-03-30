@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ch.noseryoung.test.ConsoleStreamTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-30T12:05:58" hostname="MR-LENOVO" time="0.015">
+  <properties/>
+  <testcase name="test_GetString_LeastSoldConsoleFromPortableConsolesBestseller()" classname="ch.noseryoung.test.ConsoleStreamTest" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
