@@ -1,5 +1,5 @@
 package ch.noseryoung.blj;
-
+import java.util.ResourceBundle;
 import java.util.*;
 
 public class Main {
@@ -8,11 +8,7 @@ public class Main {
         ArrayList<String> revealedWords = new ArrayList<>();
         String[][] uncoveredField = new String[6][6];
         String[][] coveredField = new String[6][6];
-        for (int i = 0; i < 6; i++) {
-            for (int a = 0; a < 6; a++) {
-                coveredField[i][a] = "*****";
-            }
-        }
+        coveredField = Methods.initCoveredfield(coveredField);
         ArrayList<String> words = new ArrayList<>();
         words.add("Flaky");
         words.add("Jazzy");
@@ -54,8 +50,19 @@ public class Main {
         Methods.initMemoryWords(words, uncoveredField);
         int turnCounter = 0;
         boolean won;
+
+        System.out.println("Select language en/de/vi: ");
+        String language1 = scan.nextLine();
+        ResourceBundle bundle = ResourceBundle.getBundle("ch/noseryoung/blj/language", new Locale(language1));
+        String introMessage = bundle.getString("introMessage");
+        String firstcoordinateMSG = bundle.getString("firstcoordinateMSG");
+        String secondcoordinateMSG = bundle.getString("secondcoordinateMSG");
+        String uncoveredwordMSG = bundle.getString("uncoveredwordMSG");
+        String solvedMSG = bundle.getString("solvedMSG");
+        System.out.println(introMessage);
+
         while (true) {
-            System.out.println("\n  +---0---+---1---+---2---+---3---+---4---+---5---+");
+            /*System.out.println("\n  +---0---+---1---+---2---+---3---+---4---+---5---+");
             for (int i = 0; i < 6; i++) {
                 System.out.print(i);
                 for (int a = 0; a < 6; a++) {
@@ -63,16 +70,16 @@ public class Main {
                 }
                 System.out.println(" | \n");
             }
-            System.out.println("  +-------+-------+-------+-------+-------+-------+");
+            System.out.println("  +-------+-------+-------+-------+-------+-------+");*/
             Methods.printField(coveredField);
             boolean passed1 = true;
             int x1 = 0;
             int y1 = 0;
             do {
-                System.out.println("Select a coordinate to reveal the word:");
+                System.out.println(firstcoordinateMSG);
                 x1 = scan.nextInt();
                 y1 = scan.nextInt();
-                if (!Methods.coordinateCheck(x1, y1)){
+                if (!Methods.coordinateCheck(x1, y1, bundle, language1)){
                     passed1 = false;
                 }
                 else {
@@ -81,12 +88,13 @@ public class Main {
                 for (int i = 0; i < revealedWords.size(); i++) {
                     if (uncoveredField[x1][y1].equals(revealedWords.get(i))) {
                         passed1 = false;
-                    } else {
+                    }
+                    else {
                         passed1 = true;
                     }
                 }
                 if (!passed1) {
-                    System.out.println("You have already uncovered this word!");
+                    System.out.println(uncoveredwordMSG);
                 }
 
             } while (!passed1);
@@ -97,39 +105,35 @@ public class Main {
             int x2 = 0;
             int y2 = 0;
             do {
-                System.out.println("Select a coordinate to reveal the second word:");
+                System.out.println(secondcoordinateMSG);
                 x2 = scan.nextInt();
                 y2 = scan.nextInt();
-                if (!Methods.coordinateCheck(x2, y2)){
+                if (!Methods.coordinateCheck(x2, y2, bundle, language1)){
                     passed2 = false;
                 }
                 else {
                     passed2 = true;
                 }
+                if (x1 == x2 && y1 == y2){
+                    passed2 = false;
+                }
                 for (int i = 0; i < revealedWords.size(); i++) {
-                    if (uncoveredField[x2][y2].equals(revealedWords.get(i)) || (x1 == x2 && y1 == y2)) {
+                    if (uncoveredField[x2][y2].equals(revealedWords.get(i))) {
                         passed2 = false;
-                    } else {
+                    }
+                    else {
                         passed2 = true;
                     }
                 }
                 if (!passed2) {
-                    System.out.println("You have already uncovered this word!");
+                    System.out.println(uncoveredwordMSG);
                 }
-
-
             } while (!passed2);
 
             coveredField[x2][y2] = uncoveredField[x2][y2];
             Methods.printField(coveredField);
-            if (coveredField[x1][y1].equals(uncoveredField[x2][y2])) {
-                System.out.println("Congratulations you have found the same words!");
-                revealedWords.add(uncoveredField[x2][y2]);
-            } else {
-                System.out.println("I'm sorry the words don't match!");
-                coveredField[x1][y1] = "*****";
-                coveredField[x2][y2] = "*****";
-            }
+            Methods.checkWords(coveredField, uncoveredField, x1, x2, y1, y2, revealedWords, bundle, language1);
+
             won = false;
             turnCounter++;
             if (turnCounter >= 18 && Arrays.deepEquals(coveredField, uncoveredField)) {
@@ -138,7 +142,7 @@ public class Main {
             }
         }
         if (won){
-            System.out.println("CONGRATULATIONS YOU HAVE SOLVE THE MEMORY!!");
+            System.out.println(solvedMSG);
         }
     }
 }
