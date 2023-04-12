@@ -8,7 +8,7 @@ public class Main {
         Books book = new Books("The three investigators", " Robert Arthur", 1964);
         CDs cd = new CDs("Mission Impossible", "Christopher McQuarrie", "CD-DA");
         Videogames videogame = new Videogames("GTA V", "Leslie Benzies", 65, 5);
-        Movies movie = new Movies("The Dictator", "Larry Charles", 2012, 18);
+        Movies movie = new Movies("Cars", "Disney", 2006, 0);
 
         book.printShelf();
         cd.printShelf();

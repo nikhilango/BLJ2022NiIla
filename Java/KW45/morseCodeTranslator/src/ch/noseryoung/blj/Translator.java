@@ -86,7 +86,7 @@ public class Translator {
         alphabet.put("-----", "9");
         if (mode == 1){
             System.out.println("****************************************************************************");
-            System.out.println("Enter a sentece: ");
+            System.out.println("Enter a sentence: ");
             String sentence = input.nextLine();
             sentence = sentence.toLowerCase();
             for (int i = 0; i < sentence.length(); i++) {

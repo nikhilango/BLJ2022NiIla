@@ -23,7 +23,7 @@ public class Methods {
     }
     public static boolean coordinateCheck(int x, int y, ResourceBundle bundle, String language){
         bundle = ResourceBundle.getBundle("ch/noseryoung/blj/language", new Locale(language));
-        if (x > 5 || y > 5){
+        if (x > 5 || y > 5 || x < 0 || y < 0){
             System.out.println(bundle.getString("nocoordinatesMSG"));
             return false;
         }

@@ -1,5 +1,7 @@
 package ch.noseryoung.blj;
 
+import java.util.stream.Stream;
+
 public class Set implements BaseCollection{
 
     private int[] elements;

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9492f98d-e22d-4fe1-a821-3c5b46c2dfd7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaCodaKata/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9492f98d-e22d-4fe1-a821-3c5b46c2dfd7" name="Changes" comment="removed useless comments">
+      <change afterPath="$PROJECT_DIR$/../../KW10/VehicleRental/src/ch/noseryoung/blj/Cars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KW10/VehicleRental/src/ch/noseryoung/blj/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KW10/VehicleRental/src/ch/noseryoung/blj/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KW10/VehicleRental/src/ch/noseryoung/blj/VehicleRentalManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../C/KW40/lightsOut/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C/KW40/lightsOut/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../KW45/morseCodeTranslator/src/ch/noseryoung/blj/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW45/morseCodeTranslator/src/ch/noseryoung/blj/Translator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CSPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/CSPoint.class" afterDir="false" />
@@ -15,6 +18,10 @@
       <change beforePath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/CoordinateSystem/out/production/CoordinateSystem/ch/noseryoung/blj/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../KW8/Inheritance/Inheritance/out/production/Inheritance/ch/noseryoung/blj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/Inheritance/Inheritance/out/production/Inheritance/ch/noseryoung/blj/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../KW8/Inheritance/Inheritance/src/ch/noseryoung/blj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../KW8/Inheritance/Inheritance/src/ch/noseryoung/blj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCodeKata/ch/noseryoung/blj/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCodeKata/ch/noseryoung/blj/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaCodeKata/ch/noseryoung/blj/Set.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaCodeKata/ch/noseryoung/blj/Set.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/noseryoung/blj/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/noseryoung/blj/Set.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../testarea/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../testarea/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,18 +48,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/Java/KW9/JavaCodeKata",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nikhi/Documents/GitHub/BLJ2022NiIla/Java/KW9/JavaCodeKata&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,6 +69,18 @@
       <option name="presentableId" value="Default" />
       <updated>1677759586994</updated>
     </task>
+    <task id="LOCAL-00001" summary="removed useless comments">
+      <created>1677832095662</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677832095663</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removed useless comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed useless comments" />
   </component>
 </project>
