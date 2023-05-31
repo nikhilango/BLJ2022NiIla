@@ -9,6 +9,13 @@ public class Starter {
     sm.run();
 
     // todo: print all sorted Triangles
+    for (int i = 0; i < sm.getAllTrianglesSortedByLongestSide().size(); i++){
+      sm.getAllTrianglesSortedByLongestSide().get(i);
+    }
+
+    for (int i = 0; i < sm.getAllTrianglesSortedByShortestSide().size(); i++){
+      sm.getAllTrianglesSortedByShortestSide().get(i);
+    }
     // ... = sm.getAllTrianglesSortedByLongestSide();
     // ... = sm.getAllTrianglesSortedByLongestSide();
 

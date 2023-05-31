@@ -1,5 +1,7 @@
 package ch.noseryoung.main;
 
+import java.util.Random;
+
 public class SideCreatorService implements ShapeSideCreator{
 
   /**
@@ -10,6 +12,9 @@ public class SideCreatorService implements ShapeSideCreator{
   @Override
   public double createSide() {
     //todo implement
-    return 0.0;
+    Random random = new Random();
+
+    double randomNumber = Math.round((random.nextDouble() * 10 + 1) * 2) / 2.0;
+    return randomNumber;
   }
 }

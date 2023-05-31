@@ -1,6 +1,8 @@
 package ch.noseryoung.main;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class TriangleManager {
 
@@ -24,14 +26,15 @@ public class TriangleManager {
     printWelcomeText();
 
     //todo: create multiple triangles with its validation
-
-    Triangle triangle = generateTriangle();
-    boolean isEquilateral = triangleValidator.isEquilateral(triangle);
-    boolean isIsosceles = triangleValidator.isIsosceles(triangle);
-    boolean isScalene = triangleValidator.isScalene(triangle);
-
-    // todo: add a valid Triangle to the triangles list
-    printTriangleInfo(triangle, isEquilateral, isIsosceles, isScalene);
+    for (int i = 0; i < 10; i++){
+      Triangle triangle = generateTriangle();
+      boolean isEquilateral = triangleValidator.isEquilateral(triangle);
+      boolean isIsosceles = triangleValidator.isIsosceles(triangle);
+      boolean isScalene = triangleValidator.isScalene(triangle);
+      triangles.add(triangle);
+      // todo: add a valid Triangle to the triangles list
+      printTriangleInfo(triangle, isEquilateral, isIsosceles, isScalene);
+    }
   }
 
   /**
@@ -54,14 +57,21 @@ public class TriangleManager {
    */
   private void printTriangleInfo(Triangle t, boolean isEquilateral, boolean isIsoceles, boolean isScalene) {
     // todo
+    System.out.println("Triangle Info:");
+    System.out.println("Side A: " + t.getA());
+    System.out.println("Side B: " + t.getB());
+    System.out.println("Side C: " + t.getC());
     if (isEquilateral){
-      System.out.println("The triangle is equilateral");
+      System.out.println("This triangle is equilateral\n");
     }
     else if (isIsoceles) {
-      System.out.println("The triangle is isocles");
+      System.out.println("This triangle is isocles\n");
     }
     else if (isScalene) {
-      System.out.println("The triangle is scalene");
+      System.out.println("This triangle is scalene\n");
+    }
+    else {
+      System.out.println("This triangle is invalid\n");
     }
   }
 
@@ -73,7 +83,9 @@ public class TriangleManager {
    */
   public ArrayList<Triangle> getAllTrianglesSortedByShortestSide(){
     // todo
-    return null;
+    Comparator<Triangle> shortestSideComarator = Comparator.comparingDouble(this::getShortestSide).reversed();
+    Collections.sort(triangles, shortestSideComarator);
+    return triangles;
   }
 
   /**
@@ -82,9 +94,24 @@ public class TriangleManager {
    *
    * @return sorted triangle list
    */
-  public ArrayList<Triangle> getAllTrianglesSortedByLongestSide(){
-    // todo
-    return null;
+  public ArrayList<Triangle> getAllTrianglesSortedByLongestSide() {
+
+    Comparator<Triangle> longestSideComparator = Comparator.comparingDouble(this::getLongestSide).reversed();
+    Collections.sort(triangles, longestSideComparator);
+
+    return triangles;
+  }
+
+  private double getLongestSide(Triangle triangle) {
+    double longestSide = Math.max(triangle.getA(), Math.max(triangle.getB(), triangle.getC()));
+
+    return longestSide;
+  }
+
+  private double getShortestSide(Triangle triangle) {
+    double longestSide = Math.min(triangle.getA(), Math.min(triangle.getB(), triangle.getC()));
+
+    return longestSide;
   }
 
   /**
@@ -92,6 +119,6 @@ public class TriangleManager {
    */
   private void printWelcomeText(){
     // todo
-    System.out.println("Hi.");
+    System.out.println("\n\n\n\n\nHi :) Welcome to the triangle manager!");
   }
 }
