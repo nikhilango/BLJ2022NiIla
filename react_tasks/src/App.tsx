@@ -3,13 +3,25 @@ import logo from './logo.svg';
 import './App.css';
 import { AppBar, Box, Container, Grid, Typography } from '@mui/material';
 import CatImageService from './service/CatImageService';
+import RandomCatList from './RandomCatList';
+
+
 
 function App() {
-  const [catImageUrl, setCatImageUrl] = useState<string>("");
+  const [catImageUrl, setCatImageUrl] = useState<string[]>([]);
+  const imageUrls: string[] = [];
   useEffect(() => {
-  CatImageService().getRandomCatImage().then((catImageUrl) => setCatImageUrl(catImageUrl));
+    const fetchCatImages = async () => {
+      for (let i = 0; i < 3; i++) {
+        const imageUrl = await CatImageService().getRandomCatImage();
+        imageUrls[i] = imageUrl;
+      }
+      setCatImageUrl(imageUrls);
+    };
+    fetchCatImages();
   }, []);
-  
+ 
+
   return (
     <div className="App">
       <Box sx={{ flexGrow: 1 }}>
@@ -23,12 +35,9 @@ function App() {
               </Typography>
             </Grid>
           </Grid>
-          <img src={catImageUrl}></img>
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <Typography variant="h4" component="h2">
-                List here
-              </Typography>
+              <RandomCatList cards={catImageUrl}></RandomCatList>
             </Grid>
           </Grid>
         </Container>

@@ -83,7 +83,7 @@ public class TriangleManager {
    */
   public ArrayList<Triangle> getAllTrianglesSortedByShortestSide(){
     // todo
-    Comparator<Triangle> shortestSideComarator = Comparator.comparingDouble(this::getShortestSide).reversed();
+    Comparator<Triangle> shortestSideComarator = Comparator.comparingDouble(this::getShortestSide);
     Collections.sort(triangles, shortestSideComarator);
     return triangles;
   }
@@ -95,23 +95,22 @@ public class TriangleManager {
    * @return sorted triangle list
    */
   public ArrayList<Triangle> getAllTrianglesSortedByLongestSide() {
-
+    // todo
     Comparator<Triangle> longestSideComparator = Comparator.comparingDouble(this::getLongestSide).reversed();
     Collections.sort(triangles, longestSideComparator);
-
     return triangles;
   }
 
-  private double getLongestSide(Triangle triangle) {
+  public double getLongestSide(Triangle triangle) {
     double longestSide = Math.max(triangle.getA(), Math.max(triangle.getB(), triangle.getC()));
 
     return longestSide;
   }
 
-  private double getShortestSide(Triangle triangle) {
-    double longestSide = Math.min(triangle.getA(), Math.min(triangle.getB(), triangle.getC()));
+  public double getShortestSide(Triangle triangle) {
+    double shortestSide = Math.min(triangle.getA(), Math.min(triangle.getB(), triangle.getC()));
 
-    return longestSide;
+    return shortestSide;
   }
 
   /**

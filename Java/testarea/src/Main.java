@@ -1,9 +1,13 @@
 
 public class Main {
+    private int i = 1;
     public static void main(String[] args) {
-        int x = 0;
-        while(x++ < 10) {}
-        String message = x > 10 ? "Greater than" : false;
-        System.out.println(message+","+x);
+        int i = 2;
+        Main s = new Main();
+        s.someMethod();
+    }
+
+    public void someMethod(){
+        System.out.println(i);
     }
 }

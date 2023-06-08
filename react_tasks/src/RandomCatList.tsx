@@ -1,12 +1,13 @@
-import { Grid, Typography } from "@mui/material";
+import {Grid} from "@mui/material";
 
-function RandomCatList(){
+
+export default function RandomCatList({cards} : {cards : any[]}){
   return(
     <Grid container spacing={2}>
       <Grid item xs={12}>
-        <Typography variant="h4" component="h2">
-          List here
-        </Typography>
+        {cards.map(card => {
+          return <img src={card} alt="a random cat"/>
+        })}
       </Grid>
     </Grid>
   );
