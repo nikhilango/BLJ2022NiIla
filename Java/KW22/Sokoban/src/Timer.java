@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.TimerTask;
 import java.util.concurrent.Executors;
@@ -5,20 +6,17 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class Timer extends TimerTask {
-    private int passedSeconds = 15;
+    private double passedSeconds = 0;
     @Override
     public void run() {
         ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
-
-        // Schedule a task to run after an initial delay of 500 milliseconds
         executor.scheduleAtFixedRate(() -> {
-            // Add your desired logic here
-
-            System.out.println(passedSeconds + " remaining seconds");
-            System.out.println("\n\n\n\n");
-            passedSeconds--;
+            DecimalFormat df = new DecimalFormat("#.#");
+            System.out.println(df.format(passedSeconds) + " seconds passed");
+            System.out.println("\n\n\n\n\n");
+            passedSeconds += 0.1;
             noTime();
-        }, 0, 1000, TimeUnit.MILLISECONDS);
+        }, 0, 100, TimeUnit.MILLISECONDS);
     }
 
     public void start(){
@@ -27,7 +25,7 @@ public class Timer extends TimerTask {
     }
 
     public void noTime(){
-        if (passedSeconds == 0){
+        if (passedSeconds == 10000){
             System.out.println("YOU LOST!!");
             System.exit(0);
         }

@@ -1,13 +1,16 @@
 
 public class Main {
-    private int i = 1;
     public static void main(String[] args) {
-        int i = 2;
-        Main s = new Main();
-        s.someMethod();
+        Animal animal1 = new Animal();
+        Animal animal2 = new Cat();
+        Cat cat = new Cat();
+
+        animal1.eat();
+        animal2.eat();
+        cat.eat();
+        cat.meow();
     }
 
-    public void someMethod(){
-        System.out.println(i);
-    }
+
 }
+
