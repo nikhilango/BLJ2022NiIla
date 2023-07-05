@@ -14,8 +14,9 @@ public class Timer extends Thread{
             System.out.println("question 2 displayed");
             Thread.sleep(3000);
             manager.showQuestion3();
-            System.out.println("question 2 displayed");
+            System.out.println("question 3 displayed");
             Thread.sleep(3000);
+            manager.showResult();
             System.out.println("it has stopped");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
