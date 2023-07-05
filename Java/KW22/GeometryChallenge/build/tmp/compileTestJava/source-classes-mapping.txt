@@ -1,0 +1,3 @@
+ch/noseryoung/test/TriangleValidatorTest.java
+ ch.noseryoung.test.TriangleValidatorTest
+ ch.noseryoung.test.TriangleValidatorTest$1
